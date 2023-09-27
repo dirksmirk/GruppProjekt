@@ -52,6 +52,7 @@ header{
     text-decoration: none;
     color: var(--brown);
     font-weight: bold;
+    font-size: 1.2em;
 }
 
 #nav-list a.active{
@@ -59,7 +60,7 @@ header{
 }
 
 #nav-list a:hover{
-    color: var(--white);
+    color: var(--dark-text);
 }
 
 footer{
