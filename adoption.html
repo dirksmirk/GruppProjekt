@@ -12,11 +12,13 @@
 </head>
 <body>
     
+    <!-- En header med företagets namn och en titel för sidan -->
     <header>
         <h1>PUPPYCCINO</h1>
         <p>Adoptera en av våra hundar!</p>
     </header>
-
+    
+    <!-- En navigation bar som man kan ta sig runt till våra olika sidor med. Detta är ju adoptions sidan, så denna skall vara markerad på något sätt på hemsidan. -->
     <nav id="navbar">
         <ul id="nav-list">
             <li>
@@ -37,6 +39,39 @@
         </ul>
     </nav>
 
+    <!-- En container för min mitten sektion, där mitt formulär och adoptions info kommer vara -->
+    <main id="container">
+        <!-- Vårat formulär där vi frågar om lite information till att börja med ifrån kunder som är intresserade i att adoptera -->
+        <div id="form"> 
+            <form>
+                <label for="firstname">Förnamn</label>
+                <input type="text" name="firstname" id="firstname">
+
+                <label for="lastname">Efternamn</label>
+                <input type="text" name="lastname" id="lastname">
+                <label for="email">E-postadress</label>
+                <input type="text" name="email" id="email">
+                <label for="phone">Telefon</label>
+                <input type="tel" name="phone" id="phone">
+                <label for="adress">Adress</label>
+                <input type="text" name="adress" id="adress">
+                <label for="age">Ålder</label>
+                <input type="text" name="age" id="age">
+                <label for="dog">Vilken hund är ni intresserad i?</label>
+                <input type="text" name="dog" id="dog">
+                <label for="living">Hur bor du?</label>
+                <input type="text" name="living" id="living">
+
+                <input type="button" value="Send">
+            </form>
+        </div>
+        <!-- Information om att man kan adoptera och vad som behövs för att kunna adoptera -->
+        <section id="adopt-info"> 
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est nam nisi consequuntur totam, itaque officia cupiditate blanditiis deserunt recusandae tempora quis dolorem veritatis impedit officiis doloremque inventore fugiat quas numquam?
+        </section>
+    </main>
+
+    <!-- Footern innehåller basic information om företaget som öppettider, adress och copyright -->
     <footer>
         <section id="openinghours-sec">
             <p>Öppettider</p>
@@ -53,6 +88,7 @@
                 <a href="">Trustpilot ★★★★★</a> 
             </p>
             <p>Copyright &#169; 2023</p>
+            <p>hello@puppyccinocafe.se</p>
         </section>
     </footer>
 
