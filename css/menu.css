@@ -1,0 +1,63 @@
+@import url(variables.css);
+
+#menu-container{
+    display: grid;
+    color: var(--beige);
+    gap: 10px 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "drinks dogmenu fika"
+    "drinks dogmenu fika"
+    "drinks swmenu lunch"
+    "drinks swmenu info"
+    ;
+}
+
+#drink-menu, #dog-menu, #sandwich-menu, #fika-menu, #info-box{
+    background-color: var(--brown);
+    border-radius: 15px;
+    padding: 0 20px;
+}
+
+#drink-menu{
+    grid-area: drinks;
+}
+
+#dog-menu{
+    grid-area: dogmenu;
+}
+
+#sandwich-menu{
+    grid-area: swmenu;
+}
+
+#fika-menu{
+    grid-area: fika;
+}
+
+#lunch-menu{
+    grid-area: lunch;
+    border: 5px dotted var(--brown);
+    background-color: var(--white);
+    color: var(--brown);
+    border-radius: 15px;
+    padding: 0 20px;
+}
+
+#info-box{
+    grid-area: info;
+}
+
+.item p, h3{
+    display: inline-block;
+}
+
+.item-name, .menu-title{
+    text-align: left;
+    width: 70%;
+}
+
+.price{
+    text-align: right;
+    width: 30%;
+}
