@@ -61,3 +61,11 @@
     text-align: right;
     width: 30%;
 }
+
+.menu-title{
+    color: var(--white);
+}
+
+#lunch-title{
+    color: var(--brown);
+}
