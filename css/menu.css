@@ -28,7 +28,7 @@ i{
     margin: 0 auto;
     display: grid;
     color: var(--beige);
-    gap: 20px;
+    gap: 30px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 
     "drinks dogmenu fika"
