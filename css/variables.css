@@ -5,4 +5,7 @@
     --brown: #5b3813;
     --white: #f1ecd1;
     --dark-text: #2c1212;
+
+    /*Main font*/
+    --main-font: nunito, sans-serif;
 }
