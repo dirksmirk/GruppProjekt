@@ -1,5 +1,30 @@
 @import url(variables.css);
 
 #container {
-    display: grid;
-}
+        column-gap: 2%;
+        row-gap: 10px;
+        margin: 20px auto;
+        min-height: 500px;
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    
+        grid-template-areas:
+        "form content content"
+    }
+    
+    #form {
+        grid-area: form;
+        border: 5px solid var(--green);
+        background-color: var(--brown);
+        color: var(--white);
+        border-radius: 15px;
+    }
+    
+    #adopt-info {
+        grid-area: content;
+        border: 5px solid var(--green);
+        background-color: var(--brown);
+        color: var(--white);
+        border-radius: 15px;
+    }
