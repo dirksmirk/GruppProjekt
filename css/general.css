@@ -2,6 +2,7 @@
 
 *{
     box-sizing: border-box;
+    font-family: 'Nunito', cursive;
 }
 
 body{
@@ -9,7 +10,7 @@ body{
     width: 90%;
     margin: 20px auto;
     color: var(--brown);
-    font-family: 'Courier New', Courier, monospace;
+    height: 1000px;
 }
 
 header{
@@ -25,6 +26,8 @@ header{
     background-color: var(--green);
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
+    position: sticky;
+    top: 0px;
 }
 
 
