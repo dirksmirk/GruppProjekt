@@ -1,2 +1,25 @@
 @import url(variables.css);
+/* Desktop */
 
+.container {
+	column-gap: 2%;
+	row-gap: 10px;
+    margin: 20px auto;
+    min-height: 500px;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    grid-template-areas:
+    "sidebar content content"
+}
+
+aside {
+    grid-area: sidebar;
+    border: 1px solid black;
+}
+
+main {
+    grid-area: content;
+    border: 1px solid black;
+}
