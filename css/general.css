@@ -10,7 +10,6 @@ body{
     width: 90%;
     margin: 20px auto;
     color: var(--brown);
-    font-family: 'Courier New', Courier, monospace;
 }
 
 header{
