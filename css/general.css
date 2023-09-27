@@ -56,3 +56,21 @@ header{
 #nav-list a:hover{
     color: var(--white);
 }
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;    
+}
+
+footer > section{
+    background-color: var(--green);
+    min-width: 300px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+footer a{
+    color: var(--brown);
+}
+
