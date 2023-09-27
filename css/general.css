@@ -21,3 +21,38 @@ header{
     background-color: var(--white);
 }
 
+#navbar{
+    background-color: var(--green);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+
+#nav-list{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+#navbar li{
+    text-align: center;
+    width: 20%;
+    display: inline;
+}
+
+#navbar a{
+    display: block;
+    text-decoration: none;
+    color: var(--brown);
+    font-weight: bold;
+}
+
+#nav-list a.active{
+    color: var(--white);
+}
+
+#nav-list a:hover{
+    color: var(--white);
+}
