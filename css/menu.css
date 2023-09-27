@@ -1,5 +1,28 @@
 @import url(variables.css);
 
+i{
+    position: absolute;
+}
+
+#dog-icon{
+    top: 77px;
+    left: 200px;
+    color: var(--dark-text);
+}
+
+#coffee-icon{
+    top: 77px;
+    right: 200px;
+    color: var(--dark-text);
+}
+
+#site-name{
+    font-size: 3.5em;
+    margin-bottom: 0;
+    letter-spacing: 17px;
+    text-shadow: 2px 2px 3px #000;
+}
+
 #menu-container{
     display: grid;
     color: var(--beige);
