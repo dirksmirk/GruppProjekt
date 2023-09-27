@@ -62,6 +62,7 @@ header{
 
 #nav-list a:hover{
     color: var(--dark-text);
+    text-shadow: none;
 }
 
 footer{
