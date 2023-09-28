@@ -126,3 +126,13 @@ header{
 #coffee-included{
     text-align: end;
 }
+
+#footer-wrapper p{
+    margin: 5px;
+}
+
+.foot-title{
+    font-weight: bold;
+}
+
+/* box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.2); */
