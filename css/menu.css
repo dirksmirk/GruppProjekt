@@ -4,6 +4,10 @@ i{
     position: absolute;
 }
 
+header{
+    background-image: linear-gradient(var(--white), var(--beige)) !important;
+}
+
 #dog-icon{
     top: 77px;
     left: 200px;
