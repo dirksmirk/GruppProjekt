@@ -1,5 +1,5 @@
 @import url(variables.css);
-/* Desktop */
+/* Large desktop */
 
 .container {
 	column-gap: 2%;
@@ -8,7 +8,7 @@
     min-height: 500px;
     
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
 
     grid-template-areas:
     "sidebar content content"
@@ -16,10 +16,36 @@
 
 aside {
     grid-area: sidebar;
-    border: 1px solid black;
 }
 
 main {
     grid-area: content;
-    border: 1px solid black;
 }
+
+aside img {
+    width: 400px;
+    height: 350px;
+    display: block;
+    border-radius: 50%;
+    margin-top: 70px;
+}
+
+h2 {
+    text-align: center;
+}
+.info {
+   padding: 20px; 
+   text-align: center;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    border-radius: 20%;
+    margin: 30px auto;
+}
+
+h3 {
+    text-align: center;
+}
+
