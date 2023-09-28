@@ -11,13 +11,13 @@ header{
 #dog-icon{
     top: 77px;
     left: 200px;
-    color: var(--dark-text);
+    color: var(--beige);
 }
 
 #coffee-icon{
     top: 77px;
     right: 200px;
-    color: var(--dark-text);
+    color: var(--dark-);
 }
 
 #site-name{
@@ -25,6 +25,14 @@ header{
     margin-bottom: 0;
     letter-spacing: 17px;
     text-shadow: 2px 2px 3px #000;
+}
+
+#text-container{
+    border: 4px solid var(--brown);
+    background-color: var(--white);
+    border-radius: 15px;
+    margin-bottom: 20px;
+    font-size: medium;
 }
 
 #menu-container{
@@ -66,7 +74,8 @@ header{
 
 #lunch-menu{
     grid-area: lunch;
-    border: 5px dotted var(--brown);
+    outline: 5px dotted var(--brown);
+    /* border: 5px dotted var(--brown); */
     background-color: var(--white);
     color: var(--brown);
     border-radius: 15px;
@@ -97,4 +106,8 @@ header{
 
 #lunch-title{
     color: var(--brown);
+}
+
+#coffee-included{
+    text-align: end;
 }
