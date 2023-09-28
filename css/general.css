@@ -87,7 +87,10 @@ footer > section{
     margin: 10px;
     border: 2px solid var(--brown);
     box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2);
+}
 
+footer p{
+    margin: 5px;
 }
 
 footer a{
