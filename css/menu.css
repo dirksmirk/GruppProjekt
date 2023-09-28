@@ -16,13 +16,6 @@ i{
     color: var(--dark-text);
 }
 
-#site-name{
-    font-size: 3.5em;
-    margin-bottom: 0;
-    letter-spacing: 17px;
-    text-shadow: 2px 2px 3px #000;
-}
-
 #menu-container{
     width: 99%;
     margin: 0 auto;
