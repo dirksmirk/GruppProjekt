@@ -43,7 +43,7 @@ i{
 
 #text-sec1{
     grid-area: text1;
-    background-color: #ded1ba;
+    background-color: var(--dark-beige);
     color: var(--brown);
     border-radius: 35px;
     font-size: 1.4em;
