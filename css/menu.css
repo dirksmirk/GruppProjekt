@@ -16,6 +16,43 @@ i{
     color: var(--dark-text);
 }
 
+#text-sec{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    background-color: var(--dark-beige);
+    color: var(--brown);
+    border-radius: 35px;
+    font-size: 1.4em;
+    font-weight: bold;
+    padding: 20px;
+}
+
+#text-sec p{
+    padding: 5px;
+    margin: 0;
+}
+
+#btn-sec{
+    display: flex;
+}
+
+#btn-sec a{
+    text-decoration: none;
+    color: var(--brown);
+    /* font-size: 1.4em;
+    font-weight: bold; */
+}
+
+#menu-btn, #dog-btn{
+    background-color: var(--dark-beige);
+    border: 0;
+    width: 45%;
+    border-radius: 35px;
+    padding: 20px;
+    margin: 20px auto;
+}
+
 #menu-container{
     width: 99%;
     margin: 0 auto;
@@ -24,10 +61,10 @@ i{
     gap: 30px;
     grid-template-columns: repeat(6, 1fr);
     grid-template-areas: 
-    ". . . text2 text2 ."
+    /* ". . . text2 text2 ."
     ". text1 . text2 text2 ."
     ". text1 . text2 text2 ."
-    ". . . text2 text2 ."
+    ". . . text2 text2 ." */
     "drinks drinks dogmenu dogmenu fika fika"
     "drinks drinks dogmenu dogmenu fika fika"
     "drinks drinks swmenu swmenu lunch lunch"
@@ -41,7 +78,7 @@ i{
     padding: 0 20px;
 }
 
-#text-sec1{
+/* #text-sec1{
     grid-area: text1;
     background-color: var(--dark-beige);
     color: var(--brown);
@@ -59,7 +96,7 @@ i{
     font-size: 1.4em;
     font-weight: bold;
     padding: 20px;
-}
+} */
 
 #drink-menu{
     grid-area: drinks;
