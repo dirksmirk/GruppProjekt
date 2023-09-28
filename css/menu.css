@@ -11,13 +11,13 @@ header{
 #dog-icon{
     top: 77px;
     left: 200px;
-    color: var(--beige);
+    color: var(--dark-text);
 }
 
 #coffee-icon{
     top: 77px;
     right: 200px;
-    color: var(--dark-);
+    color: var(--dark-text);
 }
 
 #site-name{
@@ -27,26 +27,22 @@ header{
     text-shadow: 2px 2px 3px #000;
 }
 
-#text-container{
-    border: 4px solid var(--brown);
-    background-color: var(--white);
-    border-radius: 15px;
-    margin-bottom: 20px;
-    font-size: medium;
-}
-
 #menu-container{
     width: 99%;
     margin: 0 auto;
     display: grid;
     color: var(--beige);
     gap: 30px;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(6, 1fr);
     grid-template-areas: 
-    "drinks dogmenu fika"
-    "drinks dogmenu fika"
-    "drinks swmenu lunch"
-    "drinks swmenu info"
+    ". . . text2 text2 ."
+    ". text1 . text2 text2 ."
+    ". text1 . text2 text2 ."
+    ". . . text2 text2 ."
+    "drinks drinks dogmenu dogmenu fika fika"
+    "drinks drinks dogmenu dogmenu fika fika"
+    "drinks drinks swmenu swmenu lunch lunch"
+    "drinks drinks swmenu swmenu info info"
     ;
 }
 
@@ -54,6 +50,26 @@ header{
     background-color: var(--brown);
     border-radius: 15px;
     padding: 0 20px;
+}
+
+#text-sec1{
+    grid-area: text1;
+    background-color: #ded1ba;
+    color: var(--brown);
+    border-radius: 35px;
+    font-size: 1.4em;
+    font-weight: bold;
+    padding: 20px;
+}
+
+#text-sec2{
+    grid-area: text2;
+    background-color: #ded1ba;
+    color: var(--brown);
+    border-radius: 35px;
+    font-size: 1.4em;
+    font-weight: bold;
+    padding: 20px;
 }
 
 #drink-menu{
@@ -75,7 +91,6 @@ header{
 #lunch-menu{
     grid-area: lunch;
     outline: 5px dotted var(--brown);
-    /* border: 5px dotted var(--brown); */
     background-color: var(--white);
     color: var(--brown);
     border-radius: 15px;
