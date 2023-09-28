@@ -1,5 +1,5 @@
 @import url(variables.css);
-/* Large desktop */
+/* Desktop */
 
 .container {
 	column-gap: 2%;
@@ -12,6 +12,10 @@
 
     grid-template-areas:
     "sidebar content content"
+}
+
+#header {
+    border: none;
 }
 
 aside {
@@ -38,10 +42,10 @@ h2 {
    text-align: center;
 }
 
-.image {
+.image img{
     display: flex;
     justify-content: center;
-    border-radius: 20%;
+    border-radius:5%;
     margin: 30px auto;
 }
 
@@ -49,3 +53,27 @@ h3 {
     text-align: center;
 }
 
+/* Small desktop */
+
+@media (max-width:1200px) {
+
+    footer > section {
+        min-width: 250px;
+    }
+}
+
+/* Tablet */
+
+@media (max-width:960px) {
+
+        footer > section {
+            min-width: 190px;
+        } 
+    }
+
+    /* Mobile */
+
+/* @media (max-width:768px) {
+
+
+} */
