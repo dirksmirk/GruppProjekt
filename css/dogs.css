@@ -1,1 +1,22 @@
 @import url(variables.css);
+
+ article {
+    text-align: center;
+}
+
+h2 {
+    font-size: 40px;
+    border-bottom: 2px solid;
+    border: 50px;
+}
+
+p1 {
+    display: flex;
+    justify-content: center;
+    line-height: 1.6;
+    width: 1000px;
+    margin: auto;
+    border: 2px solid brown;
+    border-radius: 12px;
+    padding: 10px;
+}
