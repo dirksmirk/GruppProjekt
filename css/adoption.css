@@ -15,12 +15,13 @@
         color: var(--dark-text);
         border-radius: 15px;
         padding: 10px;
-        display: flex;
-        flex-direction: column;
     }
 
     form {
         margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
     }
 
     .field {
@@ -43,7 +44,8 @@
     }
 
     input[type=button] {
-
+        border-radius: 5px;
+        width: 5%;
     }
     
     #adopt-info {
@@ -54,19 +56,24 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas:
-        ". text text"
         "image text text"
-        ". text text"
+        "image text text"
+        ". link ."
     }
 
     img {
         grid-area: image;
-        width: 350px;
+        width: 90%;
         border-radius: 50%;
+        align-self: center;
     }
 
     p {
         grid-area: text;
+    }
+
+    #formlink {
+        grid-area: link;
     }
 
     /* Tablet display */
