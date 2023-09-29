@@ -5,16 +5,12 @@
         row-gap: 10px;
         margin: 20px auto;
         min-height: 500px;
-        
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    
-        grid-template-areas:
-        "form content content"
+        display: flex;
+        justify-content: center;
     }
     
     #form {
-        grid-area: form;
+        width: 80%;
         background-color: var(--white);
         color: var(--dark-text);
         border-radius: 15px;
@@ -50,7 +46,7 @@
     }
     
     #adopt-info {
-        grid-area: content;
+        width: 80%;
         background-color: var(--white);
         color: var(--dark-text);
         border-radius: 15px;
@@ -76,17 +72,24 @@
     /* Removes the image from the information sections and compresses the footer */
     @media (max-width:960px)
     {
-
+        #adopt-info {
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+            "text"
+            "text"
+            "text";
+        }
+        img {
+            display: none;
+        }
+        footer > section {
+            min-width: 200px;
+        }
     }
 
     /* Phone display */
     /* Moves the adoption form below the information box and stacks the footer boxes below each other */
     @media (max-width:768px)
     {
-        #container {
-            grid-template-columns: 1fr;
-            grid-template-areas: 
-            "content"
-            "form";
-        }
+
     }
