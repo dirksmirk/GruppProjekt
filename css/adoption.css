@@ -51,10 +51,25 @@
     
     #adopt-info {
         grid-area: content;
-
         background-color: var(--white);
         color: var(--dark-text);
         border-radius: 15px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+        ". text text"
+        "image text text"
+        ". text text"
+    }
+
+    img {
+        grid-area: image;
+        width: 350px;
+        border-radius: 50%;
+    }
+
+    p {
+        grid-area: text;
     }
 
     /* Tablet display */
