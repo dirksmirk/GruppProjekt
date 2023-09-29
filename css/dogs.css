@@ -76,7 +76,7 @@ p1 {
   img {
     border-radius: 30%;
     min-height: 100px;
-    border: 2px solid var(--green);
+    border: 6px solid var(--green);
   }
 
   #snoboll {
