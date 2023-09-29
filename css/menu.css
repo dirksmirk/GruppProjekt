@@ -7,19 +7,21 @@
 
 #text-sec{
     display: flex;
-    width: 80%;
-    margin: 20px auto;
-    background-color: var(--dark-beige);
+    width: 90%;
+    margin: 30px auto;
+    border: 10px dotted var(--dark-beige);
     color: var(--dark-text);
     border-radius: 35px;
     font-size: 1.4em;
     font-weight: bold;
     padding: 20px;
+    text-align: center;
 }
 
 #text-sec p{
-    padding: 5px;
-    margin: 0;
+    padding: 0 25px;
+    margin: 0px;
+    word-spacing: 5px;
 }
 
 #menu-list{
