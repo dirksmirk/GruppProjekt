@@ -1,21 +1,5 @@
 @import url(variables.css);
 
-i{
-    position: absolute;
-}
-
-#dog-icon{
-    top: 77px;
-    left: 200px;
-    color: var(--dark-text);
-}
-
-#coffee-icon{
-    top: 77px;
-    right: 200px;
-    color: var(--dark-text);
-}
-
 #menu-text-box{
     width: 99%;
 }
