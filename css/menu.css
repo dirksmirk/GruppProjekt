@@ -42,13 +42,13 @@
     padding: 10px;
 }
 
-#menu-list a.active{
+/* #menu-list a.active{
 
 }
 
 #menu-list a:hover{
 
-}
+} */
 
 #menu-container{
     width: 99%;
@@ -145,4 +145,3 @@
 #coffee-included{
     text-align: end;
 }
-
