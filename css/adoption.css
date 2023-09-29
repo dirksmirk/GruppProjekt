@@ -15,17 +15,31 @@
     
     #form {
         grid-area: form;
-
-        background-color: var(--brown);
-        color: var(--white);
+        background-color: var(--white);
+        color: var(--dark-text);
         border-radius: 15px;
+        padding: 5px;
+    }
+
+    form {
+        margin: 10px;
+    }
+
+    label {
+        margin-top: 6px;
+        display: inline-block;
+        padding: 10px 0;
+    }
+
+    input {
+        border-radius: 5px;
     }
     
     #adopt-info {
         grid-area: content;
 
-        background-color: var(--brown);
-        color: var(--white);
+        background-color: var(--white);
+        color: var(--dark-text);
         border-radius: 15px;
     }
 
