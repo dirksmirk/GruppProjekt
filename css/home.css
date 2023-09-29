@@ -47,7 +47,7 @@ h2 {
 .image img{
     display: flex;
     justify-content: center;
-    border-radius:5%;
+    border-radius:15px;
     margin: 30px auto;
 }
 
