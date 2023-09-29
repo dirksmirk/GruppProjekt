@@ -63,7 +63,7 @@
 
     img {
         grid-area: image;
-        width: 90%;
+        width: 80%;
         border-radius: 50%;
         align-self: center;
     }
@@ -74,6 +74,24 @@
 
     #formlink {
         grid-area: link;
+        font-weight: bold;
+        text-decoration: none;
+        color: var(--brown);
+        background-color: var(--beige);
+        border: 1px solid var(--brown);
+        border-radius: 5px;
+        width: 50%;
+        height: 50%;
+        text-align: center;
+    }
+
+    #formlink:hover {
+        color: var(--dark-text);
+        text-shadow: none;
+    }
+
+    #formlink::after {
+        color: var(--brown);
     }
 
     /* Tablet display */
