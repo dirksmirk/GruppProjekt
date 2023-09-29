@@ -54,3 +54,17 @@ p1 {
       padding: 20px;
       margin-bottom: 5px;
     }
+
+.pictures {
+  width: 80%;
+  grid-template-columns: repeat(6, 1fr); 
+  display: grid;
+  margin: 20px auto;
+  column-gap: 4%;
+  row-gap: 20px; 
+  }
+
+  img {
+    border-radius: 50%;
+    min-height: 100px;
+  }
