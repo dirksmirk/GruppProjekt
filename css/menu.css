@@ -33,7 +33,7 @@
 
 #menu-list li{
     background-color: var(--dark-beige);
-    border-top-right-radius: 15px;
+    border-top-right-radius: var(--bord-rad);
     border-top-left-radius: 15px;
     text-align: center;
     display: inline;
