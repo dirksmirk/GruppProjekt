@@ -1,21 +1,5 @@
 @import url(variables.css);
 
-i{
-    position: absolute;
-}
-
-#dog-icon{
-    top: 77px;
-    left: 200px;
-    color: var(--dark-text);
-}
-
-#coffee-icon{
-    top: 77px;
-    right: 200px;
-    color: var(--dark-text);
-}
-
 #menu-text-box{
     width: 99%;
 }
@@ -58,13 +42,13 @@ i{
     padding: 10px;
 }
 
-#menu-list a.active{
+/* #menu-list a.active{
 
 }
 
 #menu-list a:hover{
 
-}
+} */
 
 #menu-container{
     width: 99%;
@@ -161,7 +145,3 @@ i{
 #coffee-included{
     text-align: end;
 }
-
-/* .foot-title{
-    font-weight: bold;
-} */
