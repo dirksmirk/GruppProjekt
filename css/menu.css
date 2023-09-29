@@ -1,25 +1,32 @@
 @import url(variables.css);
 
+/* text block */
+
 #menu-text-box{
-    width: 99%;
+    width: 95%;
+    margin: 0 auto;
 }
 
 #text-sec{
     display: flex;
-    width: 80%;
-    margin: 0 auto;
-    background-color: var(--dark-beige);
-    color: var(--brown);
+    width: 90%;
+    margin: 30px auto;
+    border: 10px dotted var(--dark-beige);
+    color: var(--dark-text);
     border-radius: 35px;
     font-size: 1.4em;
     font-weight: bold;
     padding: 20px;
+    text-align: center;
 }
 
 #text-sec p{
-    padding: 5px;
-    margin: 0;
+    padding: 0 25px;
+    margin: 0px;
+    word-spacing: 5px;
 }
+
+/* clickable menu links */
 
 #menu-list{
     display: flex;
@@ -29,74 +36,68 @@
 }
 
 #menu-list li{
-    background-color: var(--brown);
+    background-color: var(--white);
+    border-top-right-radius: var(--bord-rad);
+    border-top-left-radius: var(--bord-rad);
     text-align: center;
     display: inline;
-    width: 15%;
+    box-shadow: 0px 8px 10px 4px rgba(0,0,0,0.2);
 }
 
 #menu-list a{
     display: block;
     text-decoration: none;
-    color: var(--beige);
-    padding: 10px;
+    border-top-right-radius: var(--bord-rad);
+    border-top-left-radius: var(--bord-rad);
+    color: var(--dark-text);
+    padding: 10px 30px;
+    font-size: 1.1em;
 }
 
-/* #menu-list a.active{
-
+#menu-list a.active{
+    background-color: var(--brown);
+    color: var(--beige);
 }
 
 #menu-list a:hover{
+    background-color: var(--dark-text);
+    color: var(--beige);
+}
 
-} */
+/* menu grid */
 
 #menu-container{
-    width: 99%;
+    width: 95%;
     margin: 0 auto;
     display: grid;
     color: var(--beige);
     gap: 30px;
     grid-template-columns: repeat(6, 1fr);
     grid-template-areas:
-    "drinks drinks dogmenu dogmenu fika fika"
-    "drinks drinks dogmenu dogmenu fika fika"
+    "drinks drinks . . fika fika"
+    "drinks drinks swmenu swmenu fika fika"
+    "drinks drinks swmenu swmenu fika fika"
     "drinks drinks swmenu swmenu lunch lunch"
-    "drinks drinks swmenu swmenu info info"
+    "drinks drinks . . info info"
     ;
 }
 
-#drink-menu, #dog-menu, #sandwich-menu, #fika-menu, #info-box{
+#sandwich-menu, #fika-menu, #info-box{
     background-color: var(--brown);
-    border-radius: 15px;
+    border-radius: var(--bord-rad);
     padding: 0 20px;
 }
 
-/* #text-sec1{
-    grid-area: text1;
-    background-color: var(--dark-beige);
-    color: var(--brown);
-    border-radius: 35px;
-    font-size: 1.4em;
-    font-weight: bold;
-    padding: 20px;
+#drink-menu{
+    background-color: var(--brown);
+    border-bottom-left-radius: var(--bord-rad);
+    border-bottom-right-radius: var(--bord-rad);
+    border-top-right-radius: var(--bord-rad);
+    padding: 0 20px;
 }
-
-#text-sec2{
-    grid-area: text2;
-    background-color: #ded1ba;
-    color: var(--brown);
-    border-radius: 35px;
-    font-size: 1.4em;
-    font-weight: bold;
-    padding: 20px;
-} */
 
 #drink-menu{
     grid-area: drinks;
-}
-
-#dog-menu{
-    grid-area: dogmenu;
 }
 
 #sandwich-menu{
@@ -144,4 +145,49 @@
 
 #coffee-included{
     text-align: end;
+}
+
+/* dog menu */
+
+#dog-menu-container{
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    color: var(--beige);
+    gap: 30px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas:
+    "dogdrinks dogdrinks dogtreats dogtreats pic pic"
+    "dogdrinks dogdrinks dogtreats dogtreats pic pic"
+    ". . . . pic pic"
+    ;
+}
+
+#dog-drinks{
+    grid-area: dogdrinks;
+    background-color: var(--brown);
+    border-bottom-left-radius: var(--bord-rad);
+    border-bottom-right-radius: var(--bord-rad);
+    border-top-right-radius: var(--bord-rad);
+    padding: 0 20px;
+}
+
+#dog-treats{
+    grid-area: dogtreats;
+    background-color: var(--brown);
+    border-radius: var(--bord-rad);
+    padding: 0 20px;
+}
+
+#menu-pic{
+    grid-area: pic;
+    max-width: 80%;
+    justify-self: center;
+}
+
+#menu-pic img{
+    width: 100%;
+    border-radius: var(--bord-rad);
+    outline: 5px dotted var(--brown);
+    padding: 6px;
 }

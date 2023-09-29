@@ -9,4 +9,7 @@
 
     /*Main font*/
     --main-font: nunito, sans-serif;
+
+    /* Main border radius */
+    --bord-rad: 15px;
 }
