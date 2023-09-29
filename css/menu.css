@@ -1,5 +1,7 @@
 @import url(variables.css);
 
+/* text block */
+
 #menu-text-box{
     width: 99%;
     margin: 0 auto;
@@ -23,6 +25,8 @@
     margin: 0px;
     word-spacing: 5px;
 }
+
+/* clickeble menu links */
 
 #menu-list{
     display: flex;
@@ -60,6 +64,8 @@
     color: var(--beige);
 }
 
+/* menu grid */
+
 #menu-container{
     width: 99%;
     margin: 0 auto;
@@ -68,14 +74,15 @@
     gap: 30px;
     grid-template-columns: repeat(6, 1fr);
     grid-template-areas:
-    "drinks drinks dogmenu dogmenu fika fika"
-    "drinks drinks dogmenu dogmenu fika fika"
+    "drinks drinks . . fika fika"
+    "drinks drinks swmenu swmenu fika fika"
+    "drinks drinks swmenu swmenu fika fika"
     "drinks drinks swmenu swmenu lunch lunch"
-    "drinks drinks swmenu swmenu info info"
+    "drinks drinks . . info info"
     ;
 }
 
-#dog-menu, #sandwich-menu, #fika-menu, #info-box{
+#sandwich-menu, #fika-menu, #info-box{
     background-color: var(--brown);
     border-radius: var(--bord-rad);
     padding: 0 20px;
@@ -93,9 +100,9 @@
     grid-area: drinks;
 }
 
-#dog-menu{
+/* #dog-menu{
     grid-area: dogmenu;
-}
+} */
 
 #sandwich-menu{
     grid-area: swmenu;
@@ -142,4 +149,45 @@
 
 #coffee-included{
     text-align: end;
+}
+
+/* dog menu */
+
+#dog-menu-container{
+    width: 99%;
+    margin: 0 auto;
+    display: grid;
+    color: var(--beige);
+    gap: 30px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas:
+    "dogdrinks dogdrinks dogtreats dogtreats pic pic"
+    "dogdrinks dogdrinks dogtreats dogtreats pic pic"
+    ". . . . pic pic"
+    ;
+}
+
+#dog-drinks{
+    grid-area: dogdrinks;
+    background-color: var(--brown);
+    border-bottom-left-radius: var(--bord-rad);
+    border-bottom-right-radius: var(--bord-rad);
+    border-top-right-radius: var(--bord-rad);
+    padding: 0 20px;
+}
+
+#dog-treats{
+    grid-area: dogtreats;
+    background-color: var(--brown);
+    border-radius: var(--bord-rad);
+    padding: 0 20px;
+}
+
+#menu-pic{
+    grid-area: pic;
+}
+
+#menu-pic img{
+    width: 80%;
+    border-radius: var(--bord-rad);
 }
