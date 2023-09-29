@@ -16,6 +16,10 @@ i{
     color: var(--dark-text);
 }
 
+#menu-text-box{
+    width: 99%;
+}
+
 #text-sec{
     display: flex;
     width: 80%;
@@ -33,8 +37,33 @@ i{
     margin: 0;
 }
 
-#click-sec{
+#menu-list{
     display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menu-list li{
+    background-color: var(--brown);
+    text-align: center;
+    display: inline;
+    width: 15%;
+}
+
+#menu-list a{
+    display: block;
+    text-decoration: none;
+    color: var(--beige);
+    padding: 10px;
+}
+
+#menu-list a.active{
+
+}
+
+#menu-list a:hover{
+
 }
 
 #menu-container{
