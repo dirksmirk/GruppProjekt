@@ -31,8 +31,8 @@ img {
 #about {
     grid-area: about;
     padding: 20px;
-    background-color: var(--brown);
-    color: var(--white);
+    background-color: var(--green);
+    color: var(--dark-text);
     border-radius: 15px;
 }
 
