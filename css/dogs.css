@@ -103,3 +103,15 @@ p1 {
     margin-bottom: 20px;
   }
 
+  #jack {
+    grid-column: 2/3;
+    min-height: 125px;
+    margin-bottom: 20px;
+  }
+
+  #leo {
+    grid-column: 3/4;
+    min-height: 125px;
+    margin-bottom: 20px;
+  }
+
