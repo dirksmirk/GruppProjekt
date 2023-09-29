@@ -25,14 +25,28 @@
         margin: 10px;
     }
 
-    label {
-        margin-top: 6px;
-        display: inline-block;
-        padding: 10px 0;
+    .field {
+        margin-top: 3px;
+        display: block;
+        padding: 3px 0;
     }
 
-    input {
+    label {
+
+    }
+
+    input[type=text] {
         border-radius: 5px;
+        width: 85%;
+    }
+
+    input[type=tel] {
+        border-radius: 5px;
+        width: 85%;
+    }
+
+    input[type=button] {
+
     }
     
     #adopt-info {
