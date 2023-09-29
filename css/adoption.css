@@ -15,18 +15,61 @@
     
     #form {
         grid-area: form;
-
-        background-color: var(--brown);
-        color: var(--white);
+        background-color: var(--white);
+        color: var(--dark-text);
         border-radius: 15px;
+        padding: 5px;
+    }
+
+    form {
+        margin: 10px;
+    }
+
+    .field {
+        margin-top: 3px;
+        display: block;
+        padding: 3px 0;
+    }
+
+    label {
+
+    }
+
+    input[type=text] {
+        border-radius: 5px;
+        width: 85%;
+    }
+
+    input[type=tel] {
+        border-radius: 5px;
+        width: 85%;
+    }
+
+    input[type=button] {
+
     }
     
     #adopt-info {
         grid-area: content;
-
-        background-color: var(--brown);
-        color: var(--white);
+        background-color: var(--white);
+        color: var(--dark-text);
         border-radius: 15px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+        ". text text"
+        "image text text"
+        ". text text"
+    }
+
+    img {
+        grid-area: image;
+        width: 350px;
+        border-radius: 50%;
+    }
+
+    p {
+        grid-area: text;
     }
 
     /* Tablet display */
