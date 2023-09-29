@@ -113,3 +113,7 @@ footer a{
     color: var(--brown);
 }
 
+.foot-title{
+    font-weight: bold;
+}
+
