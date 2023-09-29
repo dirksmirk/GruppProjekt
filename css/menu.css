@@ -1,7 +1,9 @@
 @import url(variables.css);
 
+/* text block */
+
 #menu-text-box{
-    width: 99%;
+    width: 95%;
     margin: 0 auto;
 }
 
@@ -24,6 +26,8 @@
     word-spacing: 5px;
 }
 
+/* clickable menu links */
+
 #menu-list{
     display: flex;
     list-style-type: none;
@@ -32,7 +36,7 @@
 }
 
 #menu-list li{
-    background-color: var(--dark-beige);
+    background-color: var(--white);
     border-top-right-radius: var(--bord-rad);
     border-top-left-radius: var(--bord-rad);
     text-align: center;
@@ -60,22 +64,25 @@
     color: var(--beige);
 }
 
+/* menu grid */
+
 #menu-container{
-    width: 99%;
+    width: 95%;
     margin: 0 auto;
     display: grid;
     color: var(--beige);
     gap: 30px;
     grid-template-columns: repeat(6, 1fr);
     grid-template-areas:
-    "drinks drinks dogmenu dogmenu fika fika"
-    "drinks drinks dogmenu dogmenu fika fika"
+    "drinks drinks . . fika fika"
+    "drinks drinks swmenu swmenu fika fika"
+    "drinks drinks swmenu swmenu fika fika"
     "drinks drinks swmenu swmenu lunch lunch"
-    "drinks drinks swmenu swmenu info info"
+    "drinks drinks . . info info"
     ;
 }
 
-#dog-menu, #sandwich-menu, #fika-menu, #info-box{
+#sandwich-menu, #fika-menu, #info-box{
     background-color: var(--brown);
     border-radius: var(--bord-rad);
     padding: 0 20px;
@@ -91,10 +98,6 @@
 
 #drink-menu{
     grid-area: drinks;
-}
-
-#dog-menu{
-    grid-area: dogmenu;
 }
 
 #sandwich-menu{
@@ -142,4 +145,49 @@
 
 #coffee-included{
     text-align: end;
+}
+
+/* dog menu */
+
+#dog-menu-container{
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    color: var(--beige);
+    gap: 30px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas:
+    "dogdrinks dogdrinks dogtreats dogtreats pic pic"
+    "dogdrinks dogdrinks dogtreats dogtreats pic pic"
+    ". . . . pic pic"
+    ;
+}
+
+#dog-drinks{
+    grid-area: dogdrinks;
+    background-color: var(--brown);
+    border-bottom-left-radius: var(--bord-rad);
+    border-bottom-right-radius: var(--bord-rad);
+    border-top-right-radius: var(--bord-rad);
+    padding: 0 20px;
+}
+
+#dog-treats{
+    grid-area: dogtreats;
+    background-color: var(--brown);
+    border-radius: var(--bord-rad);
+    padding: 0 20px;
+}
+
+#menu-pic{
+    grid-area: pic;
+    max-width: 80%;
+    justify-self: center;
+}
+
+#menu-pic img{
+    width: 100%;
+    border-radius: var(--bord-rad);
+    outline: 5px dotted var(--brown);
+    padding: 6px;
 }
