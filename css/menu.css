@@ -16,6 +16,56 @@ i{
     color: var(--dark-text);
 }
 
+#menu-text-box{
+    width: 99%;
+}
+
+#text-sec{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    background-color: var(--dark-beige);
+    color: var(--brown);
+    border-radius: 35px;
+    font-size: 1.4em;
+    font-weight: bold;
+    padding: 20px;
+}
+
+#text-sec p{
+    padding: 5px;
+    margin: 0;
+}
+
+#menu-list{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menu-list li{
+    background-color: var(--brown);
+    text-align: center;
+    display: inline;
+    width: 15%;
+}
+
+#menu-list a{
+    display: block;
+    text-decoration: none;
+    color: var(--beige);
+    padding: 10px;
+}
+
+#menu-list a.active{
+
+}
+
+#menu-list a:hover{
+
+}
+
 #menu-container{
     width: 99%;
     margin: 0 auto;
@@ -23,11 +73,7 @@ i{
     color: var(--beige);
     gap: 30px;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-areas: 
-    ". . . text2 text2 ."
-    ". text1 . text2 text2 ."
-    ". text1 . text2 text2 ."
-    ". . . text2 text2 ."
+    grid-template-areas:
     "drinks drinks dogmenu dogmenu fika fika"
     "drinks drinks dogmenu dogmenu fika fika"
     "drinks drinks swmenu swmenu lunch lunch"
@@ -41,7 +87,7 @@ i{
     padding: 0 20px;
 }
 
-#text-sec1{
+/* #text-sec1{
     grid-area: text1;
     background-color: var(--dark-beige);
     color: var(--brown);
@@ -59,7 +105,7 @@ i{
     font-size: 1.4em;
     font-weight: bold;
     padding: 20px;
-}
+} */
 
 #drink-menu{
     grid-area: drinks;
