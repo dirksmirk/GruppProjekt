@@ -36,12 +36,27 @@ img {
     border-radius: 15px;
 }
 
+#box-media{
+    grid-area: media;
+    outline: 5px dotted var(--brown);
+    background-color: var(--white);
+    color: var(--brown);
+    border-radius: 15px;
+    padding: 0 20px;
+}
+
+
 #faq {
     grid-area: faq;
     padding: 20px;
     background-color: var(--brown);
     color: var(--white);
     border-radius: 15px;
+}
+
+@media (max-width:960px)
+{
+
 }
 
 
