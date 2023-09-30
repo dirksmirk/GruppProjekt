@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/adoption.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/433af06d57.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- En header med företagets namn och en titel för sidan -->
+
+    <i class="fa-solid fa-dog fa-4x" id="dog-icon"></i>
+    <i class="fa-solid fa-mug-hot fa-4x" id="coffee-icon"></i>
+
+    <header>
+        <h1 id="site-name">&middot PUPPYCCINO &middot</h1>
+        <p>Adoptera en av våra hundar!</p>
+    </header>
+    
+    <!-- En navigation bar som man kan ta sig runt till våra olika sidor med. Detta är ju adoptions sidan, så denna skall vara markerad på något sätt på hemsidan. -->
+    <nav id="navbar">
+        <ul id="nav-list">
+            <li>
+                <a href="home.html">Hem</a>
+            </li>
+            <li>
+                <a href="menu.html">Café Meny</a>
+            </li>
+            <li>
+                <a href="dogs.html">Hundarna</a>
+            </li>
+            <li>
+                <a href="adoption.html" class="active">Adoptera</a>
+            </li>
+            <li>
+                <a href="about.html">Om oss</a>
+            </li>
+        </ul>
+    </nav>
+
+     <!-- En container för min mitten sektion, där mitt formulär och adoptions info kommer vara -->
+     <main id="container">
+        <!-- Vårat formulär där vi frågar om lite information till att börja med ifrån kunder som är intresserade i att adoptera -->
+        <section id="form"> 
+            <form>
+                <div class="field">
+                    <label for="firstname">Förnamn</label><br>
+                    <input type="text" name="firstname" id="firstname" placeholder="Firstname"><br>
+                </div>
+                <div class="field">
+                    <label for="lastname">Efternamn</label><br>
+                    <input type="text" name="lastname" id="lastname" placeholder="Lastname"><br>
+                </div>
+                <div class="field">
+                    <label for="email">E-postadress</label><br>
+                    <input type="text" name="email" id="email" placeholder="E-mail"><br>
+                </div>
+                <div class="field">
+                    <label for="phone">Telefon</label><br>
+                    <input type="text" name="phone" id="phone" placeholder="Phone number"><br>
+                </div>
+                <div class="field">
+                    <label for="adress">Adress</label><br>
+                    <input type="text" name="adress" id="adress" placeholder="Adress"><br>
+                </div>
+                <div class="field">
+                    <label for="age">Ålder</label><br>
+                    <input type="text" name="age" id="age" placeholder="Your age"><br>
+                </div>
+                <div class="field">
+                    <label for="family">Storlek på familjen?</label><br>
+                    <input type="text" name="family" id="family" placeholder="Amount of family members"><br>
+                </div>
+                <div class="field">
+                    <label for="dog">Vilken hund är ni intresserad i?</label><br>
+                    <input type="text" name="dog" id="dog" placeholder="Your favorite dog?"><br>
+                </div>
+                <div class="field">
+                    <label for="living">Hur bor du?</label><br>
+                    <input type="text" name="living" id="living" placeholder="Living arrangements"><br>
+                </div>
+
+                <input type="button" value="Send">
+            </form>
+        </section>
+    </main>
+
+    <!-- Footern innehåller basic information om företaget som öppettider, adress och copyright -->
+    <footer>
+        <section id="openinghours-sec">
+            <p class="foot-title">Öppettider</p>
+            <p>Mån-Fre: 09:00-18:00</p>
+            <p>Lör-Sön: 10:00-18:00</p>            
+        </section>
+        <section id="adress-sec">
+            <p class="foot-title">Adress:</p>
+            <p>Hittepåvägen 172</p>
+            <p>123 45 Stockholm</p>
+        </section>
+        <section id="copyright-sec">
+            <p>
+                <a href="">Trustpilot ★★★★★</a> 
+            </p>
+            <p>Copyright &#169; 2023</p>
+            <p>hello@puppyccinocafe.se</p>
+        </section>
+    </footer>
+
+</body>
+</html>
