@@ -181,8 +181,6 @@
 
 #menu-pic{
     grid-area: pic;
-    max-width: 80%;
-    justify-self: center;
 }
 
 #menu-pic img{
