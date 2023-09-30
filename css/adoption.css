@@ -5,29 +5,27 @@
         row-gap: 10px;
         margin: 20px auto;
         min-height: 500px;
-        
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    
-        grid-template-areas:
-        "form content content"
+        display: flex;
+        justify-content: center;
     }
     
     #form {
-        grid-area: form;
+        width: 80%;
         background-color: var(--white);
         color: var(--dark-text);
         border-radius: 15px;
-        padding: 5px;
+        padding: 10px;
     }
 
     form {
         margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
     }
 
     .field {
-        margin-top: 3px;
-        display: block;
+        margin-top: 5px;
         padding: 3px 0;
     }
 
@@ -46,47 +44,91 @@
     }
 
     input[type=button] {
-
+        margin: 7px;
+        border-radius: 5px;
+        width: 50px;
     }
     
     #adopt-info {
-        grid-area: content;
+        width: 80%;
         background-color: var(--white);
         color: var(--dark-text);
         border-radius: 15px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas:
-        ". text text"
         "image text text"
-        ". text text"
+        "image text text"
+        ". link .";
+        justify-content: center;
     }
 
     img {
         grid-area: image;
-        width: 350px;
+        width: 80%;
         border-radius: 50%;
+        align-self: center;
     }
 
     p {
         grid-area: text;
     }
 
+    #formlink {
+        grid-area: link;
+        font-weight: bold;
+        text-decoration: none;
+        color: var(--brown);
+        background-color: var(--green);
+        border: 2px solid var(--brown);
+        border-radius: 5px;
+        width: 200px;
+        height: 28px;
+        text-align: center;
+    }
+
+    #formlink:hover {
+        color: var(--dark-text);
+        text-shadow: none;
+    }
+
+    #formlink::after {
+        color: var(--brown);
+    }
+
     /* Tablet display */
-    /* Removes the image from the information sections and compresses the footer */
+    /* Removes the image from the information sections and compresses the footer so it doesnt need to wrap */
     @media (max-width:960px)
     {
-
+        #adopt-info {
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+            "text"
+            "text"
+            "link";
+        }
+        #formlink {
+            
+        }
+        img {
+            display: none;
+        }
+        footer > section {
+            min-width: 25%;
+        }
     }
 
     /* Phone display */
-    /* Moves the adoption form below the information box and stacks the footer boxes below each other */
+    /* Turns the footer into a column and and rezises them to fit better for a mobile display
+        resizes the form and info sections too */
     @media (max-width:768px)
     {
-        #container {
-            grid-template-columns: 1fr;
-            grid-template-areas: 
-            "content"
-            "form";
+        footer {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        footer > section {
+            min-width: 75%;
         }
     }
