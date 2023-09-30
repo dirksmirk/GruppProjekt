@@ -44,8 +44,9 @@
     }
 
     input[type=button] {
+        margin: 7px;
         border-radius: 5px;
-        width: 5%;
+        width: 50px;
     }
     
     #adopt-info {
@@ -58,7 +59,8 @@
         grid-template-areas:
         "image text text"
         "image text text"
-        ". link ."
+        ". link .";
+        justify-content: center;
     }
 
     img {
@@ -77,11 +79,11 @@
         font-weight: bold;
         text-decoration: none;
         color: var(--brown);
-        background-color: var(--beige);
-        border: 1px solid var(--brown);
+        background-color: var(--green);
+        border: 2px solid var(--brown);
         border-radius: 5px;
-        width: 50%;
-        height: 50%;
+        width: 200px;
+        height: 28px;
         text-align: center;
     }
 
@@ -95,7 +97,7 @@
     }
 
     /* Tablet display */
-    /* Removes the image from the information sections and compresses the footer */
+    /* Removes the image from the information sections and compresses the footer so it doesnt need to wrap */
     @media (max-width:960px)
     {
         #adopt-info {
@@ -103,7 +105,10 @@
             grid-template-areas: 
             "text"
             "text"
-            "text";
+            "link";
+        }
+        #formlink {
+            
         }
         img {
             display: none;
@@ -114,7 +119,8 @@
     }
 
     /* Phone display */
-    /* Moves the adoption form below the information box and stacks the footer boxes below each other */
+    /* Turns the footer into a column and and rezises them to fit better for a mobile display
+        resizes the form and info sections too */
     @media (max-width:768px)
     {
         footer {
