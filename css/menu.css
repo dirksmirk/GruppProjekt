@@ -209,6 +209,10 @@
 
 @media (max-width: 1200px) {
    
+    #dog-icon, #coffee-icon{
+        display: none;
+    }
+
     #menu-container{
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
