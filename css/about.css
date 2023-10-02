@@ -1,4 +1,3 @@
-
 /* Variables CSS */
 
 
@@ -11,12 +10,12 @@
     row-gap: 10px;
     margin: 20px auto;
     min-height: 500px;
-    
+
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 
     grid-template-areas:
-    "pics about faq"
+        "pics about faq"
 }
 
 
@@ -27,15 +26,15 @@
     background-color: var(--brown);
     color: var(--white);
     border-radius: 15px;
-    
+
 }
 
 /* Image styling */
 img {
     border-radius: 15px;
-  }
+}
 
-  /* About section of web-page */
+/* About section of web-page */
 #about {
     grid-area: about;
     padding: 20px;
@@ -46,7 +45,7 @@ img {
 
 /* Social-media about box */
 
-#box-media{
+#box-media {
     grid-area: media;
     outline: 5px dotted var(--brown);
     background-color: var(--white);
@@ -63,4 +62,3 @@ img {
     color: var(--white);
     border-radius: 15px;
 }
-
