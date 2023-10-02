@@ -14,7 +14,7 @@
     border: 10px dotted var(--dark-beige);
     color: var(--dark-text);
     border-radius: 35px;
-    font-size: 1.4em;
+    font-size: 1.2em;
     font-weight: bold;
     padding: 20px;
     text-align: center;
@@ -155,11 +155,11 @@
     display: grid;
     color: var(--beige);
     gap: 30px;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(8, 1fr);
     grid-template-areas:
-    "dogdrinks dogdrinks dogtreats dogtreats pic pic"
-    "dogdrinks dogdrinks dogtreats dogtreats pic pic"
-    ". . . . pic pic"
+    "dogdrinks dogdrinks dogdrinks dogtreats dogtreats dogtreats pic pic"
+    "dogdrinks dogdrinks dogdrinks dogtreats dogtreats dogtreats pic pic"
+    ". doginfo doginfo doginfo doginfo . pic pic"
     ;
 }
 
@@ -177,6 +177,19 @@
     background-color: var(--brown);
     border-radius: var(--bord-rad);
     padding: 0 20px;
+}
+
+#dog-info{
+    grid-area: doginfo;
+    background-color: var(--dark-beige);
+    color: var(--brown);
+    border-radius: var(--bord-rad);
+    text-align: center;
+}
+
+#dog-info p{
+    text-align: center;
+    font-size: 1.2em;
 }
 
 #menu-pic{
