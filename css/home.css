@@ -1,5 +1,5 @@
 @import url(variables.css);
-/* Desktop */
+/* Large desktop */
 
 .container {
 	column-gap: 2%;
@@ -64,10 +64,6 @@ h3 {
 
 @media (max-width:1200px) {
 
-    footer > section {
-        min-width: 250px;
-    }
-
     #headline {
         font-size: 15px;
     }
@@ -107,7 +103,7 @@ h3 {
     }
 
         footer > section {
-            min-width: 45%
+            min-width: 45%;
         } 
 
         #headline {
