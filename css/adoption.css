@@ -1,6 +1,6 @@
 @import url(variables.css);
 
-#info-container {
+#info {
         column-gap: 2%;
         row-gap: 10px;
         margin: 20px auto;
@@ -19,6 +19,7 @@
         min-height: 300px;
         width: 75%;
         display: flex;
+        flex-direction: column;
         align-content: center;
         background-color: var(--white);
         color: var(--dark-text);
@@ -26,8 +27,22 @@
         padding: 10px;
     }
 
+    #form > p {
+        text-align: center;
+
+    }
+
+    #info-head,
+    #form-head {
+        font-weight: bold;
+        font-size: large;
+        background-color: var(--white);
+        background-image: none;
+    }
+
     form {
-        margin-left: 5%;
+        margin-left: 3%;
+        margin-right: 3%;
         gap: 10px;
         width: 100%;
         display: flex;
@@ -71,11 +86,8 @@
         flex-direction: column;
     }
 
-
-
     img {
         grid-area: image;
-        height: 60%;
         width: 80%;
         border-radius: 50%;
         align-self: center;
@@ -89,9 +101,9 @@
     #formlink {
         font-weight: bold;
         text-decoration: none;
-        color: var(--brown);
-        background-color: var(--green);
-        border: 2px solid var(--brown);
+        color: var(--dark-beige);
+        background-color: var(--brown);
+        border: 2px solid var(--dark-text);
         border-radius: 5px;
         width: 200px;
         height: 28px;
@@ -100,20 +112,22 @@
     }
 
     #formlink:hover {
-        color: var(--dark-text);
+        color: var(--white);
         text-shadow: none;
     }
 
     #formlink::after {
-        color: var(--brown);
+        color: var(--dark-beige);
     }
 
     /* Tablet display */
     /* Removes the image from the information sections and compresses the footer so it doesnt need to wrap */
     @media (max-width:960px)
     {
+
         #adopt-info {
             width: 75%;
+            justify-self: center;
         }
         #formlink {
             
@@ -134,12 +148,16 @@
         resizes the form and info sections too */
     @media (max-width:768px)
     {
+        #adopt-info {
+            width: 90%;
+        }
+
         #footer-wrapper {
             flex-direction: column;
             align-items: center;
         }
 
         footer > section {
-            min-width: 75%;
+            max-width: 85%;
         }
     }
