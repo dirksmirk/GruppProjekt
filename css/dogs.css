@@ -49,55 +49,28 @@ h2 {
       margin-bottom: 5px;
     }
 
-.pictures {
-  width: 100%;
-  grid-template-columns: repeat(3, 1fr); 
-  display: grid;
-  margin: 60px auto;
-  column-gap: 4%;
-  row-gap: 60px;
-  place-items: center;
-  }
+    .doges {
+      width: 900px;
+      height: 400px;
+      /*background: #000;*/
+      margin-top: 50px;
+      display: flex;
+    }
 
-  img {
-    border-radius: 50%;
-    min-height: 100px;
-    border: 6px solid var(--green);
-  }
+    .box {
+      margin: 20px;
+      width: 800px;
+      height: 400px;
+      box-shadow: -1px 0 10px #000000;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      /*background-color: black*/
+    }
 
-  #snoboll {
-    grid-column: 1/2;
-    min-height: 125px;
-    margin-bottom: 20px;
-  }
-
-  #lisa {
-    grid-column: 2/3;
-    min-height: 125px;
-    margin-bottom: 20px;
-  }
-
-  #ein {
-    grid-column: 3/4;
-    min-height: 125px;
-    margin-bottom: 20px;
-  }
-
-  #zoro {
-    grid-column: 1/2;
-    min-height: 125px;
-    margin-bottom: 20px;
-  }
-
-  #jack {
-    grid-column: 2/3;
-    min-height: 125px;
-    margin-bottom: 20px;
-  }
-
-  #leo {
-    grid-column: 3/4;
-    min-height: 125px;
-    margin-bottom: 20px;
-  }
-
+    img {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      display: flex;
+    }
