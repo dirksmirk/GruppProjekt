@@ -34,7 +34,7 @@ header{
     padding: 20px;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
-    background-image: linear-gradient(var(--white), var(--white), var(--beige)) !important;
+    background-image: linear-gradient(var(--white), var(--white), var(--beige));
 }
 
 header h1{
