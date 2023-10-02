@@ -61,6 +61,10 @@ h3 {
     color:var(--dark-text);
 }
 
+#navbar {
+    z-index: 1000; 
+}
+
 /* Small desktop */
 
 
