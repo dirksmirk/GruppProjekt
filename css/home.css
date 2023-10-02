@@ -4,7 +4,7 @@
 .container {
 	column-gap: 2%;
 	row-gap: 10px;
-    margin: 20px auto;
+    margin: 0px auto;
     min-height: 500px;
     width: 90%;
     background-color: var(--dark-beige);
@@ -14,30 +14,15 @@
     grid-template-columns: repeat(3, 1fr);
 
     grid-template-areas:
-    ". content content"
+    "headline headline headline"
     "sidebar content content"
     ". content content"
 }
 
-.section {
-    display: grid;
-    grid-template-columns: 1fr;
-
-    grid-template-areas:
-    "info"
+#headline {
+    grid-area: headline;
 }
 
-.info {
-    grid-area: info;
-    text-align: center;
-    color: var(--dark-text);
-    font-size: 20px;
-    padding: 20px;
-}
-
-#header {
-    border: none;
-}
 
 aside {
     grid-area: sidebar;
@@ -45,6 +30,10 @@ aside {
 
 main {
     grid-area: content;
+    text-align: center;
+    color: var(--dark-text);
+    font-size: 20px;
+    padding: 20px;
 }
 
 
