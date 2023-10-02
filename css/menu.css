@@ -3,7 +3,7 @@
 /* text block */
 
 #menu-text-box{
-    width: 95%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -67,7 +67,7 @@
 /* menu grid */
 
 #menu-container{
-    width: 95%;
+    width: 90%;
     margin: 0 auto;
     display: grid;
     color: var(--beige);
@@ -151,7 +151,7 @@
 /* dog menu */
 
 #dog-menu-container{
-    width: 95%;
+    width: 90%;
     margin: 0 auto;
     display: grid;
     color: var(--beige);
