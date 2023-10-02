@@ -5,6 +5,7 @@
 	column-gap: 2%;
 	row-gap: 10px;
     margin: 0px auto;
+    padding-bottom: 20px;
     min-height: 500px;
     width: 90%;
     background-color: var(--dark-beige);
@@ -21,8 +22,9 @@
 
 #headline {
     grid-area: headline;
+    text-align: center;
+    font-size: 20px;
 }
-
 
 aside {
     grid-area: sidebar;
@@ -46,10 +48,6 @@ aside img {
     outline: 7px solid var(--brown);
 }
 
-.stor-text {
-    font-size: 30px;
-}
-
 .image img{
     display: flex;
     justify-content: center;
@@ -70,11 +68,11 @@ h3 {
         min-width: 250px;
     }
 
-    .stor-text {
-        font-size: 23px;
+    #headline {
+        font-size: 15px;
     }
 
-    .info {
+    main {
         font-size: 15px;
     }
 }
@@ -90,8 +88,8 @@ h3 {
     }
 
     .image img {
-        width: 600px;
-        height: 400px;
+        width: 550px;
+        height: 350px;
         object-fit: cover;
     }
 
@@ -99,21 +97,21 @@ h3 {
         grid-template-columns: 1fr;
 
         grid-template-areas:
+        "headline"
         "content"
         "sidebar"
-        "info"
+    }
+
+    #footer-wrapper {
+        flex-wrap: wrap;
     }
 
         footer > section {
-            min-width: 190px;
+            min-width: 45%
         } 
 
-        .stor-text {
-            font-size: 20px;
-        }
-
-        .info {
-            font-size: 10px;
+        #headline {
+            font-size: 15px;
         }
     }
 
@@ -121,24 +119,13 @@ h3 {
 
 @media (max-width:768px) {
 
-    header h1{
-        font-size: 2em;
-        margin-bottom: 0;
-        letter-spacing: 10px;
-        text-shadow: 1px 1px 2px #000;
-    }
-
-        .stor-text {
-            font-size: 15px;
-        }
-
     .container {
         grid-template-columns: 1fr;
 
         grid-template-areas:
+        "headline"
         "content"
         "sidebar"
-        "info"
     }
 
     aside img {
@@ -151,8 +138,15 @@ h3 {
         display: none;
     }
 
-        footer {
-            display: block;
-            margin-top: 50px;
-        } 
+    h3 {
+        font-size: 15px;
     }
+
+    #footer-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    footer > section {
+        min-width: 75%;
+    }
+}
