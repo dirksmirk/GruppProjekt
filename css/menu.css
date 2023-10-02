@@ -11,7 +11,7 @@
     display: flex;
     width: 90%;
     margin: 30px auto;
-    border: 10px dotted var(--dark-beige);
+    border: 10px dotted var(--green);
     color: var(--dark-text);
     border-radius: 35px;
     font-size: 1.2em;
@@ -72,6 +72,7 @@
     display: grid;
     color: var(--beige);
     gap: 30px;
+    padding-bottom: 15px;
     grid-template-columns: repeat(6, 1fr);
     grid-template-areas:
     "drinks drinks . . fika fika"
@@ -194,6 +195,7 @@
 
 #menu-pic{
     grid-area: pic;
+    min-width: 200px;
 }
 
 #menu-pic img{
