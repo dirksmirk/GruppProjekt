@@ -21,22 +21,22 @@ h2 {
 .hundar {
   width: 100%;
   text-align: center;
-  margin: 50px auto;
+  margin: 10px auto;
   grid-template-columns: repeat(12, 1fr); 
   display: grid;
-  column-gap: 6%;
-  padding: 10px; }
+  column-gap: 4%; }
 
     #hundar1
     { grid-column: 1/7;
       background-color: var(--brown);
       border: 8px solid var(--green);
       color: var(--dark-beige);
-      font-size: 20px;
-      min-height: 60px;
+      font-size: 30px;
       border-radius: 6px;
-      padding: 40px;
-      margin-bottom: 5px;
+      padding-top: 20px;
+      padding-right: 10px;
+      padding-bottom: 20px;
+      padding-left: 10px;
     }
 
     #hundar2
@@ -44,11 +44,12 @@ h2 {
       background-color: var(--brown);
       border: 8px solid var(--green);
       color: var(--dark-beige);
-      font-size: 20px;
-      min-height: 60px;
+      font-size: 30px;
       border-radius: 6px;
-      padding: 40px;
-      margin-bottom: 5px;
+      padding-top: 20px;
+      padding-right: 10px;
+      padding-bottom: 20px;
+      padding-left: 10px;
     }
 
     .doges {
@@ -63,7 +64,7 @@ h2 {
     .box {
       margin: 40px auto;
       width: 100%;
-      height: 500px;
+      height: 600px;
       border-radius: 2%;
       padding: 10px;
       box-shadow: -2px 0 10px var(--brown);
