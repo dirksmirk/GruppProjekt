@@ -50,27 +50,29 @@ h2 {
     }
 
     .doges {
-      width: 900px;
-      height: 400px;
-      /*background: #000;*/
-      margin-top: 50px;
-      display: flex;
+      width: 90%;
+      height: 500px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto;
     }
 
     .box {
-      margin: 20px;
-      width: 800px;
-      height: 400px;
+      margin: 60px;
+      width: 350px;
+      height: 450px;
+      border-radius: 2%;
       box-shadow: -1px 0 10px #000000;
       align-items: center;
       justify-content: center;
       text-align: center;
-      /*background-color: black*/
+      background-color: white;
     }
 
     img {
       width: 300px;
       height: 300px;
       border-radius: 50%;
-      display: flex;
+      border: 6px solid var(--green);
     }
