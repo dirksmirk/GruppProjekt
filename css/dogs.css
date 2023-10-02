@@ -63,11 +63,11 @@ h2 {
       width: 350px;
       height: 450px;
       border-radius: 2%;
-      box-shadow: -1px 0 10px #000000;
+      box-shadow: -1px 0 10px var(--brown);
       align-items: center;
       justify-content: center;
       text-align: center;
-      background-color: white;
+      background-color: var(--white);
     }
 
     img {
