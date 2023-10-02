@@ -14,7 +14,7 @@ h2 {
     padding: 20px;
     display: flex;
     justify-content: center;
-    width: 20%;
+    width: 25%;
     margin: 80px auto;
 }
 
@@ -45,7 +45,7 @@ p1 {
     { grid-column: 1/7;
       border: 4px solid var(--brown);
       color: var(--brown);
-      font-size: 20px;
+      font-size: 16px;
       min-height: 80px;
       border-radius: 6px;
       padding: 20px;
@@ -56,7 +56,7 @@ p1 {
     { grid-column: 7/13;
       border: 4px solid var(--brown);
       color: var(--brown);
-      font-size: 20px;
+      font-size: 16px;
       min-height: 80px;
       border-radius: 6px;
       padding: 20px;
