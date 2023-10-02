@@ -204,3 +204,86 @@
     outline: 5px dotted var(--brown);
     padding: 6px;
 }
+
+/* smaller desktop */
+
+@media (max-width: 1200px) {
+   
+    #menu-container{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "drinks swmenu"
+        "drinks swmenu"
+        "drinks fika"
+        "info lunch"
+        ;
+    }
+
+    #dog-menu-container{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "dogdrinks dogtreats"
+        "dogdrinks dogtreats"
+        "doginfo doginfo"
+        ;
+    }
+
+    #menu-pic{
+        display: none;
+    }
+
+    #footer-wrapper{
+        flex-wrap: wrap;
+    }
+
+    footer > section{
+        min-width: 45%;
+    }
+
+}
+
+/* tablet */
+
+@media (max-width: 960px) {
+
+}
+
+/* mobile */
+
+@media (max-width: 768px){
+
+    #text-sec{
+        display: block;
+    }
+
+    #text-sec p{
+        padding: 10px 0;
+    }
+    #menu-container{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "drinks"
+        "swmenu"
+        "fika"
+        "lunch"
+        "info"
+        ;
+    }
+
+    #dog-menu-container{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "dogdrinks"
+        "dogtreats"
+        "doginfo"
+        ;
+    }
+
+    #footer-section{
+        flex-direction: column;
+    }
+
+    footer > section{
+        min-width: 90%
+    }
+}
