@@ -51,7 +51,6 @@ h2 {
 
     .doges {
       width: 90%;
-      height: 500px;
       margin: auto;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
