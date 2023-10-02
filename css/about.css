@@ -22,7 +22,11 @@
     grid-template-columns: 1fr 1fr 1fr;
 
     grid-template-areas:
-        "pics about faq"
+    "pics about faq"
+    "pics about faq"
+    "pics about faq"
+    "pics about ."
+    ;
 }
 
 
@@ -67,6 +71,7 @@ img {
     color: var(--brown);
     border-radius: 15px;
     padding: 0 20px;
+    text-align: center;
 }
 
 /* FAQ box */
