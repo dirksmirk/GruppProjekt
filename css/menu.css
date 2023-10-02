@@ -11,7 +11,7 @@
     display: flex;
     width: 90%;
     margin: 30px auto;
-    border: 10px dotted var(--dark-beige);
+    border: 10px dotted var(--green);
     color: var(--dark-text);
     border-radius: 35px;
     font-size: 1.2em;
