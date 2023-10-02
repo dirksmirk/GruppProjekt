@@ -30,7 +30,6 @@ i{
 }
 
 header{
-    border: 4px solid var(--green);
     text-align: center;
     padding: 20px;
     border-top-right-radius: 15px;
