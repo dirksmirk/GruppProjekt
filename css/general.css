@@ -90,14 +90,14 @@ header h1{
 
 footer{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-between;  
     margin-top: 20px;  
 }
 
 footer > section{
     background-color: var(--green);
-    min-width: 300px;
+    min-width: 30%;
     text-align: center;
     border-radius: 10px;
     margin: 10px;
