@@ -42,7 +42,6 @@ aside {
 
 main {
     grid-area: content;
-   /*  background-color: var(--dark-beige); */
 }
 
 .fa {
