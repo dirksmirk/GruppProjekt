@@ -37,7 +37,7 @@ header{
     background-image: linear-gradient(var(--white), var(--white), var(--beige));
 }
 
-header h1{
+#site-name{
     font-size: 3.5em;
     margin-bottom: 0;
     letter-spacing: 17px;
