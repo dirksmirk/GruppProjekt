@@ -4,9 +4,13 @@
         column-gap: 2%;
         row-gap: 10px;
         margin: 20px auto;
-        min-height: 500px;
-        display: flex;
-        justify-content: center;
+        min-height: 300px;
+        width: 90%;
+        display: grid;
+        grid-template-columns: 1fr 1ff;
+        grid-template-areas: 
+        "image info";
+        align-content: center;
     }
     
     #form {
@@ -50,32 +54,32 @@
     }
     
     #adopt-info {
-        width: 80%;
+        grid-area: info;
+        width: 85%;
         background-color: var(--white);
         color: var(--dark-text);
         border-radius: 15px;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas:
-        "image text text"
-        "image text text"
-        ". link .";
-        justify-content: center;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
     }
+
+
 
     img {
         grid-area: image;
+        height: 60%;
         width: 80%;
         border-radius: 50%;
         align-self: center;
+        justify-self: center;
     }
 
     p {
-        grid-area: text;
+
     }
 
     #formlink {
-        grid-area: link;
         font-weight: bold;
         text-decoration: none;
         color: var(--brown);
@@ -85,6 +89,7 @@
         width: 200px;
         height: 28px;
         text-align: center;
+        align-self: center;
     }
 
     #formlink:hover {
@@ -101,20 +106,19 @@
     @media (max-width:960px)
     {
         #adopt-info {
-            grid-template-columns: 1fr;
-            grid-template-areas: 
-            "text"
-            "text"
-            "link";
+            width: 75%;
         }
         #formlink {
             
+        }
+        #footer-wrapper {
+            flex-wrap: wrap;
         }
         img {
             display: none;
         }
         footer > section {
-            min-width: 25%;
+            min-width: 45%;
         }
     }
 
@@ -123,7 +127,7 @@
         resizes the form and info sections too */
     @media (max-width:768px)
     {
-        footer {
+        #footer-wrapper {
             flex-direction: column;
             align-items: center;
         }
