@@ -4,7 +4,14 @@
 @import url(variables.css);
 
 
+
+
 /* Container for sides of web page */
+.container{
+    font-size: 25px;
+}
+
+
 #photos {
     column-gap: 2%;
     row-gap: 10px;
@@ -23,7 +30,7 @@
 #pics {
     grid-area: pics;
     padding: 20px;
-    background-color: var(--brown);
+    background-color: var(--dark-beige);
     color: var(--white);
     border-radius: 15px;
 
