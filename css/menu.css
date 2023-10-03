@@ -184,6 +184,7 @@
     grid-area: doginfo;
     background-color: var(--dark-beige);
     color: var(--brown);
+    font-weight: bold;
     border-radius: var(--bord-rad);
     text-align: center;
 }
