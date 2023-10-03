@@ -2,7 +2,7 @@
 
 /* text block */
 
-#menu-text-box{
+#menu-text-box, #menu-container, #dog-menu-container{
     width: 90%;
     margin: 0 auto;
 }
@@ -67,8 +67,6 @@
 /* menu grid */
 
 #menu-container{
-    width: 90%;
-    margin: 0 auto;
     display: grid;
     color: var(--beige);
     gap: 30px;
@@ -83,22 +81,15 @@
     ;
 }
 
-#sandwich-menu, #fika-menu, #info-box{
+#sandwich-menu, #fika-menu, #info-box, #drink-menu{
     background-color: var(--brown);
     border-radius: var(--bord-rad);
     padding: 0 20px;
 }
 
 #drink-menu{
-    background-color: var(--brown);
-    border-bottom-left-radius: var(--bord-rad);
-    border-bottom-right-radius: var(--bord-rad);
-    border-top-right-radius: var(--bord-rad);
-    padding: 0 20px;
-}
-
-#drink-menu{
     grid-area: drinks;
+    border-top-left-radius: 0;
 }
 
 #sandwich-menu{
@@ -114,7 +105,7 @@
     outline: 5px dotted var(--brown);
     background-color: var(--white);
     color: var(--brown);
-    border-radius: 15px;
+    border-radius: var(--bord-rad);
     padding: 0 20px;
 }
 
@@ -138,9 +129,10 @@
 
 .menu-title{
     color: var(--white);
+    text-shadow: 2px 2px 2px var(--dark-text);
 }
 
-#vegan-alt{
+#vegan-alt, #milk-item, #coffee-included{
     width: 100%;
 }
 
@@ -149,18 +141,12 @@
 }
 
 #coffee-included{
-    text-align: end;
-}
-
-#milk-item{
-    width: 100%;
+    text-align: center;
 }
 
 /* dog menu grid */
 
 #dog-menu-container{
-    width: 90%;
-    margin: 0 auto;
     display: grid;
     color: var(--beige);
     gap: 30px;
@@ -172,20 +158,19 @@
     ;
 }
 
+#dog-drinks, #dog-treats{
+    background-color: var(--brown);
+    border-radius: var(--bord-rad);
+    padding: 0 20px;
+}
+
 #dog-drinks{
     grid-area: dogdrinks;
-    background-color: var(--brown);
-    border-bottom-left-radius: var(--bord-rad);
-    border-bottom-right-radius: var(--bord-rad);
-    border-top-right-radius: var(--bord-rad);
-    padding: 0 20px;
+    border-top-left-radius: 0;
 }
 
 #dog-treats{
     grid-area: dogtreats;
-    background-color: var(--brown);
-    border-radius: var(--bord-rad);
-    padding: 0 20px;
 }
 
 #dog-info{
@@ -274,11 +259,7 @@
         letter-spacing: normal;
     }
 
-    #nav-list{
-        display: block;
-    }
-
-    #text-sec{
+    #nav-list, #text-sec{
         display: block;
     }
 
