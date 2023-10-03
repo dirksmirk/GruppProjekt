@@ -9,7 +9,16 @@
 /* Container for sides of web page */
 .container{
     font-size: 25px;
+    grid-template-columns: (1fr 1fr, 1fr);
+    display: grid;
+    grid-template-areas:
+    "pics about faq"
+    "pics about faq"
+    "pics about faq"
+    "pics about ."
+    ;
 }
+
 
 
 #photos {
@@ -37,6 +46,8 @@
     background-color: var(--dark-beige);
     color: var(--white);
     border-radius: 15px;
+    box-shadow: 10px 5px 5px grey;
+    ;
 
 }
 
@@ -60,6 +71,13 @@ img {
     background-color: var(--green);
     color: var(--dark-text);
     border-radius: 15px;
+    box-shadow: 10px 5px 5px grey;
+     grid-template-areas:
+    "pics about faq"
+    "pics about faq"
+    "pics about faq"
+    "pics about ."
+    ;
 }
 
 /* Social-media about box */
@@ -71,7 +89,14 @@ img {
     color: var(--brown);
     border-radius: 15px;
     padding: 0 20px;
+   
     text-align: center;
+    grid-template-areas:
+    "pics about faq"
+    "pics about faq"
+    "pics about faq"
+    "pics about ."
+    ;
 }
 
 /* FAQ box */
@@ -81,4 +106,16 @@ img {
     background-color: var(--brown);
     color: var(--white);
     border-radius: 15px;
+    grid-template-columns: 1fr 1fr 1fr;
+    box-shadow: 10px 5px 5px grey;
+    grid-template-areas:
+    "pics about faq"
+    "pics about faq"
+    "pics about faq"
+    "pics about ."
+    ;
 }
+
+    
+    
+            
