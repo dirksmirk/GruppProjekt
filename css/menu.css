@@ -71,13 +71,13 @@
     color: var(--beige);
     gap: 30px;
     padding-bottom: 15px;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
-    "drinks drinks . . fika fika"
-    "drinks drinks swmenu swmenu fika fika"
-    "drinks drinks swmenu swmenu fika fika"
-    "drinks drinks swmenu swmenu lunch lunch"
-    "drinks drinks . . info info"
+    "drinks . fika"
+    "drinks swmenu fika"
+    "drinks swmenu fika"
+    "drinks swmenu lunch"
+    "drinks . info"
     ;
 }
 
@@ -151,11 +151,11 @@
     display: grid;
     color: var(--beige);
     gap: 30px;
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(9, 1fr);
     grid-template-areas:
-    "dogdrinks dogdrinks dogdrinks dogtreats dogtreats dogtreats pic pic"
-    "dogdrinks dogdrinks dogdrinks dogtreats dogtreats dogtreats pic pic"
-    ". doginfo doginfo doginfo doginfo . pic pic"
+    "dogdrinks dogdrinks dogdrinks dogtreats dogtreats dogtreats pic pic pic"
+    "dogdrinks dogdrinks dogdrinks dogtreats dogtreats dogtreats pic pic pic"
+    ". doginfo doginfo doginfo doginfo . pic pic pic"
     ;
 }
 
