@@ -49,44 +49,84 @@
         <header id="form-head">
             ADOPTIONS FORMULÄR
         </header>
-        <p>OBS! Fyll endast i detta formulär efter att ni läst igenom tidigare sidan med information. </p>
+        <p id="warning">OBS! Fyll endast i detta formulär efter att ni läst igenom tidigare sidan med information. <br>
+            Tänk på att vi endast återkopplar om vi ser er som en potentiell matchning för hunden! 
+        </p>
         <!-- Vårat formulär där vi frågar om lite information till att börja med ifrån kunder som är intresserade i att adoptera -->
             <form>
                 <div class="field">
-                    <label for="firstname">Förnamn</label><br>
-                    <input type="text" name="firstname" id="firstname" placeholder="Firstname"><br>
+                    <label for="firstname">Förnamn</label>
+                    <input type="text" name="firstname" id="firstname" placeholder="Firstname">
                 </div>
                 <div class="field">
-                    <label for="lastname">Efternamn</label><br>
-                    <input type="text" name="lastname" id="lastname" placeholder="Lastname"><br>
+                    <label for="lastname">Efternamn</label>
+                    <input type="text" name="lastname" id="lastname" placeholder="Lastname">
                 </div>
                 <div class="field">
-                    <label for="email">E-postadress</label><br>
-                    <input type="text" name="email" id="email" placeholder="E-mail"><br>
+                    <label for="email">E-postadress</label>
+                    <input type="text" name="email" id="email" placeholder="E-mail">
                 </div>
                 <div class="field">
-                    <label for="phone">Telefon</label><br>
-                    <input type="text" name="phone" id="phone" placeholder="Phone number"><br>
+                    <label for="phone">Telefon</label>
+                    <input type="text" name="phone" id="phone" placeholder="Phone number">
                 </div>
                 <div class="field">
-                    <label for="adress">Adress</label><br>
-                    <input type="text" name="adress" id="adress" placeholder="Adress"><br>
+                    <label for="adress">Adress</label>
+                    <input type="text" name="adress" id="adress" placeholder="Adress">
                 </div>
                 <div class="field">
-                    <label for="age">Ålder</label><br>
-                    <input type="text" name="age" id="age" placeholder="Your age"><br>
+                    <label for="age">Ålder</label>
+                    <input type="text" name="age" id="age" placeholder="Your age">
                 </div>
                 <div class="field">
-                    <label for="family">Storlek på familjen?</label><br>
-                    <input type="text" name="family" id="family" placeholder="Amount of family members"><br>
+                    <label for="family">Storlek på familjen?</label>
+                    <input type="text" name="family" id="family" placeholder="Amount of family members">
                 </div>
                 <div class="field">
-                    <label for="dog">Vilken hund är ni intresserad i?</label><br>
-                    <input type="text" name="dog" id="dog" placeholder="Your favorite dog?"><br>
+                    <label for="dog">Vilken hund är ni intresserad i?</label>
+                    <input type="text" name="dog" id="dog" placeholder="Which dog are you interested in?">
                 </div>
                 <div class="field">
                     <label for="living">Hur bor du?</label><br>
-                    <input type="text" name="living" id="living" placeholder="Living arrangements"><br>
+                    <div class="radio">
+                        <input type="radio" name="living" id="lägenhet">
+                        <label for="">Lägenhet</label><br>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" name="living" id="Villa">
+                        <label for="living">Villa</label><br>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" name="living" id="radhus">
+                        <label for="living">Radhus</label><br>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" name="living" id="annat">
+                        <label for="living">Annat</label><br>
+                    </div>
+                 </div>
+                <div class="field">
+                    <label for="rent">Äger eller hyr ni boende?</label><br>
+                    <div class="radio">
+                        <input type="radio" name="rent" id="äger">
+                        <label for="">Äger</label><br>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" name="rent" id="hyr">
+                        <label for="rent">Hyr i andra hand</label><br>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" name="rent" id="hyr2">
+                        <label for="rent">Hyr i andra hand</label><br>
+                    </div>
+                 </div>
+                 <div class="field">
+                    <label for="space">Hur stort är erat utrymme?</label>
+                    <input type="text" name="space" id="space" placeholder="How big is your space?">
+                </div>
+                 <div class="field">
+                    <label for="experience">Har ni tidigare erfarenhet med hundar?</label>
+                    <textarea name="experience" id="experience" placeholder="Any earlier experience with dogs?"></textarea>
                 </div>
 
                 <input type="button" value="Send">

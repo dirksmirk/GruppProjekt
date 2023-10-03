@@ -27,17 +27,17 @@
         padding: 10px;
     }
 
-    #form > p {
+    #warning {
         text-align: center;
-
+        color: red;
     }
 
     #info-head,
     #form-head {
-        font-weight: bold;
-        font-size: large;
-        background-color: var(--white);
+        font-weight: bolder;
+        font-size: 30px;
         background-image: none;
+        color: var(--brown);
     }
 
     form {
@@ -56,23 +56,30 @@
     }
 
     label {
-
+        width: 30%;
+        float: left;
     }
 
     input[type=text] {
         border-radius: 5px;
-        width: 95%;
+        width: 65%;
+        float: left;
     }
 
-    input[type=tel] {
+    input[type=radio] {
+        float: left
+    }
+    
+    textarea {
         border-radius: 5px;
-        width: 95%;
+        width: 65%;
     }
 
     input[type=button] {
         margin: 7px;
         border-radius: 5px;
         width: 50px;
+        align-self: center;
     }
     
     #adopt-info {
@@ -80,8 +87,9 @@
         width: 85%;
         background-color: var(--white);
         color: var(--dark-text);
-        border-radius: 15px;
-        padding: 10px;
+        border-radius: var(--bord-rad);
+        box-shadow: 3px 3px 3px var(--dark-text);
+        padding: 20px;
         display: flex;
         flex-direction: column;
     }
@@ -95,7 +103,7 @@
     }
 
     p {
-
+        font-size: large;
     }
 
     #formlink {
@@ -126,11 +134,11 @@
     {
 
         #adopt-info {
-            width: 75%;
+            width: 80%;
             justify-self: center;
         }
         #formlink {
-            
+            height: 56px;
         }
         #footer-wrapper {
             flex-wrap: wrap;
@@ -158,6 +166,6 @@
         }
 
         footer > section {
-            max-width: 85%;
+            min-width: 85%;
         }
     }
