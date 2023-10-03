@@ -138,9 +138,10 @@
 
 .menu-title{
     color: var(--white);
+    text-shadow: 2px 2px 2px var(--dark-text);
 }
 
-#vegan-alt{
+#vegan-alt, #milk-item, #coffee-included{
     width: 100%;
 }
 
@@ -149,11 +150,7 @@
 }
 
 #coffee-included{
-    text-align: end;
-}
-
-#milk-item{
-    width: 100%;
+    text-align: center;
 }
 
 /* dog menu grid */
