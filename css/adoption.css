@@ -1,49 +1,145 @@
 @import url(variables.css);
 
-#container {
+#info-container {
         column-gap: 2%;
         row-gap: 10px;
         margin: 20px auto;
-        min-height: 500px;
-        
+        min-height: 300px;
+        width: 90%;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    
-        grid-template-areas:
-        "form content content"
+        grid-template-areas: 
+        "image info";
+        align-content: center;
     }
-    
-    #form {
-        grid-area: form;
 
-        background-color: var(--brown);
-        color: var(--white);
+    #form {
+        column-gap: 2%;
+        row-gap: 10px;
+        margin: 20px auto;
+        min-height: 300px;
+        width: 75%;
+        display: flex;
+        align-content: center;
+        background-color: var(--white);
+        color: var(--dark-text);
         border-radius: 15px;
+        padding: 10px;
+    }
+
+    form {
+        margin-left: 5%;
+        gap: 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .field {
+        margin-top: 5px;
+        padding: 3px 0;
+    }
+
+    label {
+
+    }
+
+    input[type=text] {
+        border-radius: 5px;
+        width: 95%;
+    }
+
+    input[type=tel] {
+        border-radius: 5px;
+        width: 95%;
+    }
+
+    input[type=button] {
+        margin: 7px;
+        border-radius: 5px;
+        width: 50px;
     }
     
     #adopt-info {
-        grid-area: content;
-
-        background-color: var(--brown);
-        color: var(--white);
+        grid-area: info;
+        width: 85%;
+        background-color: var(--white);
+        color: var(--dark-text);
         border-radius: 15px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+    img {
+        grid-area: image;
+        height: 60%;
+        width: 80%;
+        border-radius: 50%;
+        align-self: center;
+        justify-self: center;
+    }
+
+    p {
+
+    }
+
+    #formlink {
+        font-weight: bold;
+        text-decoration: none;
+        color: var(--brown);
+        background-color: var(--green);
+        border: 2px solid var(--brown);
+        border-radius: 5px;
+        width: 200px;
+        height: 28px;
+        text-align: center;
+        align-self: center;
+    }
+
+    #formlink:hover {
+        color: var(--dark-text);
+        text-shadow: none;
+    }
+
+    #formlink::after {
+        color: var(--brown);
     }
 
     /* Tablet display */
-    /* Removes the image from the information sections and compresses the footer */
+    /* Removes the image from the information sections and compresses the footer so it doesnt need to wrap */
     @media (max-width:960px)
     {
-
+        #adopt-info {
+            width: 75%;
+        }
+        #formlink {
+            
+        }
+        #footer-wrapper {
+            flex-wrap: wrap;
+        }
+        img {
+            display: none;
+        }
+        footer > section {
+            min-width: 45%;
+        }
     }
 
     /* Phone display */
-    /* Moves the adoption form below the information box and stacks the footer boxes below each other */
+    /* Turns the footer into a column and and rezises them to fit better for a mobile display
+        resizes the form and info sections too */
     @media (max-width:768px)
     {
-        #container {
-            grid-template-columns: 1fr;
-            grid-template-areas: 
-            "content"
-            "form";
+        #footer-wrapper {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        footer > section {
+            min-width: 75%;
         }
     }

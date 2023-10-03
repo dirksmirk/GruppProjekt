@@ -1,72 +1,104 @@
 @import url(variables.css);
 
-i{
-    position: absolute;
+/* text block */
+
+#menu-text-box{
+    width: 90%;
+    margin: 0 auto;
 }
 
-#dog-icon{
-    top: 77px;
-    left: 200px;
+#text-sec{
+    display: flex;
+    width: 90%;
+    margin: 30px auto;
+    border: 10px dotted var(--green);
     color: var(--dark-text);
+    border-radius: 35px;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
 }
 
-#coffee-icon{
-    top: 77px;
-    right: 200px;
-    color: var(--dark-text);
+#text-sec p{
+    padding: 0 25px;
+    margin: 0px;
+    word-spacing: 5px;
 }
+
+/* clickable menu links */
+
+#menu-list{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menu-list li{
+    background-color: var(--white);
+    border-top-right-radius: var(--bord-rad);
+    border-top-left-radius: var(--bord-rad);
+    text-align: center;
+    display: inline;
+    box-shadow: 0px 8px 10px 4px rgba(0,0,0,0.2);
+}
+
+#menu-list a{
+    display: block;
+    text-decoration: none;
+    border-top-right-radius: var(--bord-rad);
+    border-top-left-radius: var(--bord-rad);
+    color: var(--dark-text);
+    padding: 10px 30px;
+    font-size: 1.1em;
+}
+
+#menu-list a.active{
+    background-color: var(--brown);
+    color: var(--beige);
+}
+
+#menu-list a:hover{
+    background-color: var(--dark-text);
+    color: var(--beige);
+}
+
+/* menu grid */
 
 #menu-container{
-    width: 99%;
+    width: 90%;
     margin: 0 auto;
     display: grid;
     color: var(--beige);
     gap: 30px;
+    padding-bottom: 15px;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-areas: 
-    ". . . text2 text2 ."
-    ". text1 . text2 text2 ."
-    ". text1 . text2 text2 ."
-    ". . . text2 text2 ."
-    "drinks drinks dogmenu dogmenu fika fika"
-    "drinks drinks dogmenu dogmenu fika fika"
+    grid-template-areas:
+    "drinks drinks . . fika fika"
+    "drinks drinks swmenu swmenu fika fika"
+    "drinks drinks swmenu swmenu fika fika"
     "drinks drinks swmenu swmenu lunch lunch"
-    "drinks drinks swmenu swmenu info info"
+    "drinks drinks . . info info"
     ;
 }
 
-#drink-menu, #dog-menu, #sandwich-menu, #fika-menu, #info-box{
+#sandwich-menu, #fika-menu, #info-box{
     background-color: var(--brown);
-    border-radius: 15px;
+    border-radius: var(--bord-rad);
     padding: 0 20px;
 }
 
-#text-sec1{
-    grid-area: text1;
-    background-color: #ded1ba;
-    color: var(--brown);
-    border-radius: 35px;
-    font-size: 1.4em;
-    font-weight: bold;
-    padding: 20px;
-}
-
-#text-sec2{
-    grid-area: text2;
-    background-color: #ded1ba;
-    color: var(--brown);
-    border-radius: 35px;
-    font-size: 1.4em;
-    font-weight: bold;
-    padding: 20px;
+#drink-menu{
+    background-color: var(--brown);
+    border-bottom-left-radius: var(--bord-rad);
+    border-bottom-right-radius: var(--bord-rad);
+    border-top-right-radius: var(--bord-rad);
+    padding: 0 20px;
 }
 
 #drink-menu{
     grid-area: drinks;
-}
-
-#dog-menu{
-    grid-area: dogmenu;
 }
 
 #sandwich-menu{
@@ -116,6 +148,146 @@ i{
     text-align: end;
 }
 
-/* .foot-title{
-    font-weight: bold;
-} */
+/* dog menu */
+
+#dog-menu-container{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    color: var(--beige);
+    gap: 30px;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-areas:
+    "dogdrinks dogdrinks dogdrinks dogtreats dogtreats dogtreats pic pic"
+    "dogdrinks dogdrinks dogdrinks dogtreats dogtreats dogtreats pic pic"
+    ". doginfo doginfo doginfo doginfo . pic pic"
+    ;
+}
+
+#dog-drinks{
+    grid-area: dogdrinks;
+    background-color: var(--brown);
+    border-bottom-left-radius: var(--bord-rad);
+    border-bottom-right-radius: var(--bord-rad);
+    border-top-right-radius: var(--bord-rad);
+    padding: 0 20px;
+}
+
+#dog-treats{
+    grid-area: dogtreats;
+    background-color: var(--brown);
+    border-radius: var(--bord-rad);
+    padding: 0 20px;
+}
+
+#dog-info{
+    grid-area: doginfo;
+    background-color: var(--dark-beige);
+    color: var(--brown);
+    border-radius: var(--bord-rad);
+    text-align: center;
+}
+
+#dog-info p{
+    text-align: center;
+    font-size: 1.2em;
+}
+
+#menu-pic{
+    grid-area: pic;
+    min-width: 200px;
+}
+
+#menu-pic img{
+    width: 100%;
+    border-radius: var(--bord-rad);
+    outline: 5px dotted var(--brown);
+    padding: 6px;
+}
+
+/* smaller desktop */
+
+@media (max-width: 1200px) {
+   
+    #dog-icon, #coffee-icon{
+        display: none;
+    }
+
+    #menu-container{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "drinks swmenu"
+        "drinks swmenu"
+        "drinks fika"
+        "info lunch"
+        ;
+    }
+
+    #dog-menu-container{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "dogdrinks dogtreats"
+        "dogdrinks dogtreats"
+        "doginfo doginfo"
+        ;
+    }
+
+    #menu-pic{
+        display: none;
+    }
+
+    #footer-wrapper{
+        flex-wrap: wrap;
+    }
+
+    footer > section{
+        min-width: 45%;
+    }
+
+}
+
+/* tablet */
+
+@media (max-width: 960px) {
+
+}
+
+/* mobile */
+
+@media (max-width: 768px){
+
+    #text-sec{
+        display: block;
+    }
+
+    #text-sec p{
+        padding: 10px 0;
+    }
+    #menu-container{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "drinks"
+        "swmenu"
+        "fika"
+        "lunch"
+        "info"
+        ;
+    }
+
+    #dog-menu-container{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "dogdrinks"
+        "dogtreats"
+        "doginfo"
+        ;
+    }
+
+    #footer-section{
+        flex-direction: column;
+    }
+
+    footer > section{
+        min-width: 90%
+    }
+}

@@ -1,22 +1,81 @@
 @import url(variables.css);
 
- article {
+article {
     text-align: center;
 }
 
 h2 {
-    font-size: 40px;
-    border-bottom: 2px solid;
-    border: 50px;
+  background-color: var(--dark-beige);
+  color: var(--brown);
+  place-items: center;
+  border-radius: 10px;
+  font-size: 36px;
+  font-weight: bold;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  width: 25%;
+  margin: 50px auto;
 }
 
-p1 {
-    display: flex;
-    justify-content: center;
-    line-height: 1.6;
-    width: 1000px;
-    margin: auto;
-    border: 2px solid brown;
-    border-radius: 12px;
-    padding: 10px;
-}
+.hundar {
+  width: 100%;
+  text-align: center;
+  margin: 10px auto;
+  grid-template-columns: repeat(12, 1fr); 
+  display: grid;
+  column-gap: 4%; }
+
+    #hundar1
+    { grid-column: 1/7;
+      background-color: var(--brown);
+      border: 8px solid var(--green);
+      color: var(--dark-beige);
+      font-size: 30px;
+      border-radius: 6px;
+      padding-top: 20px;
+      padding-right: 10px;
+      padding-bottom: 20px;
+      padding-left: 10px;
+    }
+
+    #hundar2
+    { grid-column: 7/13;
+      background-color: var(--brown);
+      border: 8px solid var(--green);
+      color: var(--dark-beige);
+      font-size: 30px;
+      border-radius: 6px;
+      padding-top: 20px;
+      padding-right: 10px;
+      padding-bottom: 20px;
+      padding-left: 10px;
+    }
+
+    .doges {
+      width: 100%;
+      margin: 50px auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto;
+      column-gap: 6%;
+    }
+
+    .box {
+      margin: 40px auto;
+      width: 100%;
+      height: 600px;
+      border-radius: 2%;
+      padding: 10px;
+      box-shadow: -2px 0 10px var(--brown);
+      align-items: center;
+      text-align: center;
+      background-color: var(--white);
+    }
+
+    img {
+      width: 100%;
+      height: 300px;
+      border-radius: 50%;
+      border: 6px solid var(--green);
+    }

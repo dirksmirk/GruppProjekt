@@ -1,58 +1,121 @@
+/* Variables CSS */
+
+
 @import url(variables.css);
 
-#container {
+
+
+
+/* Container for sides of web page */
+.container{
+    font-size: 25px;
+    grid-template-columns: (1fr 1fr, 1fr);
+    display: grid;
+    grid-template-areas:
+    "pics about faq"
+    "pics about faq"
+    "pics about faq"
+    "pics about ."
+    ;
+}
+
+
+
+#photos {
     column-gap: 2%;
     row-gap: 10px;
     margin: 20px auto;
     min-height: 500px;
-    
+
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 
     grid-template-areas:
     "pics about faq"
+    "pics about faq"
+    "pics about faq"
+    "pics about ."
+    ;
 }
 
 
-
+/* Pictures for web page */
 #pics {
     grid-area: pics;
     padding: 20px;
-    background-color: var(--brown);
+    background-color: var(--dark-beige);
     color: var(--white);
     border-radius: 15px;
-    
+    box-shadow: 10px 5px 5px grey;
+    ;
+
 }
 
+/* Image styling */
 img {
-    border-radius: 10%;
+    border-radius: 15px;
+
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
   }
 
+/* About section of web-page */
 #about {
     grid-area: about;
     padding: 20px;
-    background-color: var(--brown);
-    color: var(--white);
+    background-color: var(--green);
+    color: var(--dark-text);
     border-radius: 15px;
+    box-shadow: 10px 5px 5px grey;
+     grid-template-areas:
+    "pics about faq"
+    "pics about faq"
+    "pics about faq"
+    "pics about ."
+    ;
 }
 
+/* Social-media about box */
+
+#box-media {
+    grid-area: media;
+    outline: 5px dotted var(--brown);
+    background-color: var(--white);
+    color: var(--brown);
+    border-radius: 15px;
+    padding: 0 20px;
+   
+    text-align: center;
+    grid-template-areas:
+    "pics about faq"
+    "pics about faq"
+    "pics about faq"
+    "pics about ."
+    ;
+}
+
+/* FAQ box */
 #faq {
     grid-area: faq;
     padding: 20px;
     background-color: var(--brown);
     color: var(--white);
     border-radius: 15px;
+    grid-template-columns: 1fr 1fr 1fr;
+    box-shadow: 10px 5px 5px grey;
+    grid-template-areas:
+    "pics about faq"
+    "pics about faq"
+    "pics about faq"
+    "pics about ."
+    ;
 }
 
-
-@media (max-width:768px)
-    {
-        #container {
-            grid-template-columns: 1fr;
-            grid-template-areas: 
-            "about"
-            "pics"
-            "faq"
-            ;
-        }
-    }
+    
+    
+            

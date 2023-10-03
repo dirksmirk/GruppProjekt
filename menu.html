@@ -42,22 +42,36 @@
         </ul>
     </nav>
 
-    <div id="menu-container">
-        <section id="text-sec1">
-            <p>TESTAR</p>
-        </section>
-
-        <section id="text-sec2">
+    <div id="menu-text-box">
+        <section id="text-sec">
             <p>
-                TESTAR
-                Här i menyn ser du allt du kan äta och dricka hos oss på Puppyccino. 
-                Här hittar du även det din hund kan äta och dricka! Men var vänlig att 
-                inte ge något till våra caféhundar då dom lätt kan äta för mycket.
-                Vi har ett fikaschema för dom så om du har tur ska det fikas när du är här, 
-                då kan det matas.
+                Här i menyn ser du allt du kan äta 
+                och dricka hos oss på Puppyccino. 
+                Här hittar du även det din hund 
+                kan äta och dricka! 
+            </p>
+            <p>
+                Men var vänlig att inte ge något till våra 
+                caféhundar då dom lätt kan äta för mycket.
+                Vi har ett fikaschema för dom så om du har 
+                tur ska det fikas när du är här, 
+                då ger vi ut fika som ni sen kan ge till hundarna.
             </p>
         </section>
+        
+        <section id="click-sec">
+            <ul id="menu-list">
+                <li>
+                    <a href="menu.html" class="active">Meny</a>
+                </li>
+                <li>
+                    <a href="menu-dog.html">Hundmeny</a>
+                </li>
+            </ul>
+        </section>
+    </div>
 
+    <div id="menu-container">
         <section id="drink-menu">
             <article class="item">
                 <h3 class="menu-title">Varm dryck</h3><p class="price">Pris</p>
@@ -98,24 +112,6 @@
                 <p class="item-name">Frappucino</p><p class="price">35</p>
             </article>
         </section>
-        
-        <section id="dog-menu">
-            <article class="item">
-                <h3 class="menu-title">Dog treats</h3><p class="price">Pris</p>
-            </article>
-            <article class="item">
-                <p class="item-name">Puppuccino</p><p class="price">35</p>
-            </article>
-            <article class="item">
-                <p class="item-name">Hundkex</p><p class="price">28</p>
-            </article>
-            <article class="item">
-                <p class="item-name">Banankaka</p><p class="price">32</p>
-            </article>
-            <article class="item">
-                <p class="item-name">Morotstopp</p><p class="price">22</p>
-            </article>            
-        </section>
 
         <section id="sandwich-menu">
             <article class="item">
@@ -135,7 +131,10 @@
             </article>            
             <article class="item">
                 <p class="item-name">Hummus på rågbröd</p><p class="price">40</p>
-            </article>            
+            </article>    
+            <article class="item">
+                <p class="item-name">Finns även veganska alternativ!</p>        
+            </article>        
         </section>
 
         <section id="fika-menu">
@@ -158,7 +157,7 @@
 
         <section id="lunch-menu">
             <article class="item">
-                <h3 class="menu-title" id="lunch-title">Luncherbjudande</h3><p class="price">Pris</p>
+                <h3 class="menu-title" id="lunch-title">Luncherbjudande</h3>
             </article>
             <article class="item">
                 <p class="item-name">Dagens soppa m. bröd</p><p class="price">109</p>
@@ -171,13 +170,17 @@
                 <p class="item-name">Bryggkaffe påtår</p><p class="price">5</p>
             </article>
             <article class="item">
-                <p class="item-name">Puppuccino påtår</p><p class="price">10</p>
+                <p class="item-name">Mjölk &nbsp;/&nbsp Havre &nbsp;/&nbsp Mandel &nbsp;/&nbsp Ärt</p>
             </article>
         </section>
     </div>
 
-
     <footer id="footer-wrapper">
+        <section id="contact-sec">
+            <p class="foot-title">Kontakt</p>
+            <p>08 33 44 55</p>
+            <p>hello@puppyccinocafe.se</p>
+        </section>
         <section id="openinghours-sec">
             <p class="foot-title">Öppettider</p>
             <p>Mån-Fre: 09:00-18:00</p>

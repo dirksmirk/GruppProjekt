@@ -10,10 +10,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+
+    <!-- For paw print -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://kit.fontawesome.com/433af06d57.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
-    <header>
-        <h1>PUPPYCCINO</h1>
+
+        <i class="fa-solid fa-dog fa-4x" id="dog-icon"></i>
+        <i class="fa-solid fa-mug-hot fa-4x" id="coffee-icon"></i>
+    
+        <header>
+            <h1 id="site-name">&middot PUPPYCCINO &middot</h1>
         <p>Bästa hundcafét i Stockholm!</p>
     </header>
 
@@ -37,26 +48,65 @@
         </ul>
     </nav>
 
+
    <div class="container">
-        <aside>sidebar</aside> 
-        <main>content</main>  
+    <section id="headline">
+        <h2>Välkommen till Puppyccino, din nya favoritplats i Stockholm!</h2>
+    </section>
+
+    <aside id="picture">
+        <img src="images/Latte hund.jpg" alt="latte-dog">
+    </aside> 
+
+     <main id="content">
+         <p>
+            Här du kan njuta av en god kopp kaffe och samtidigt umgås med söta fyrbenta vänner! 
+            Vår café är designat för att skapa en avslappnad och mysig atmosfär där både hundar
+            och människor kan trivs. Vi har olika hundraser som kommer och går, 
+            så varje besök blir unikt och fullt av kärlek och glädje. 
+            På Puppyccino har du även möjligheten att adoptera en av våra underbara hundar. 
+            Vi samarbetar med lokala djurhem och räddningsorganisationer för att ge hemlösa
+            hundar en andra chans till ett kärleksfullt hem.  Genom att besöka oss kan du inte 
+            bara njuta av en härlig stund med våra fyrbenta
+            vänner, utan också göra en verklig 
+            skillnad i en hunds liv. 
+            
+            Kom och upptäck Puppyccino, där du kan hitta din nya bästa vän!
+            <br>
+            <br>
+            <i style="font-size:20px" class="fa">&#xf1b0;</i>
+         </p>
+        </main>  
     </div>
 
-    <footer>
+    <section>
+        <h3>Nu har vi öppnat uteserveringen!</h3>
+        <div class="image">
+            <img src="images/bkg-dog.webp" alt="dog">
+        </div>
+    </section>
+
+    <footer id="footer-wrapper">
+        <section id="contact-sec">
+            <p class="foot-title">Kontakt</p>
+            <p>08 33 44 55</p>
+            <p>hello@puppyccinocafe.se</p>
+        </section>
         <section id="openinghours-sec">
-            <p>Öppettider</p>
+            <p class="foot-title">Öppettider</p>
             <p>Mån-Fre: 09:00-18:00</p>
             <p>Lör-Sön: 10:00-18:00</p>            
         </section>
         <section id="adress-sec">
-            <p>Adress:</p>
+            <p class="foot-title">Adress:</p>
             <p>Hittepåvägen 172</p>
             <p>123 45 Stockholm</p>
         </section>
         <section id="copyright-sec">
-            <p>
-                <a href="">Trustpilot ★★★★★</a> 
-            </p>
+            <p class="foot-title">"Bäst i stan!"</p>
+               <p>
+               <a href="">Trustpilot ★★★★★</a> 
+               </p>
             <p>Copyright &#169; 2023</p>
         </section>
     </footer>
