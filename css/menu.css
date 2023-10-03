@@ -140,6 +140,10 @@
     color: var(--white);
 }
 
+#vegan-alt{
+    width: 100%;
+}
+
 #lunch-title{
     color: var(--brown);
 }
