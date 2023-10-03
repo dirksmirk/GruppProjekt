@@ -138,6 +138,7 @@
 
 #lunch-title{
     color: var(--brown);
+    text-shadow: none;
 }
 
 #coffee-included{
