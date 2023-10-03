@@ -16,12 +16,12 @@
     border-radius: 35px;
     font-size: 1.2em;
     font-weight: bold;
-    padding: 20px;
+    padding: 20px 0;
     text-align: center;
 }
 
 #text-sec p{
-    padding: 0 25px;
+    padding: 15px;
     margin: 0px;
     word-spacing: 5px;
 }
@@ -148,7 +148,11 @@
     text-align: end;
 }
 
-/* dog menu */
+#milk-item{
+    width: 100%;
+}
+
+/* dog menu grid */
 
 #dog-menu-container{
     width: 90%;
@@ -222,7 +226,7 @@
         "drinks swmenu"
         "drinks swmenu"
         "drinks fika"
-        "info lunch"
+        "lunch info"
         ;
     }
 
@@ -252,20 +256,32 @@
 /* tablet */
 
 @media (max-width: 960px) {
-
+    #site-name{
+        font-size: 3.2em;
+        letter-spacing: 10px;
+    }
 }
 
 /* mobile */
 
 @media (max-width: 768px){
+    #site-name{
+        font-size: 2.9em;
+        letter-spacing: normal;
+    }
+
+    #nav-list{
+        display: block;
+    }
 
     #text-sec{
         display: block;
     }
 
     #text-sec p{
-        padding: 10px 0;
+        padding: 10px 5px;
     }
+
     #menu-container{
         grid-template-columns: 1fr;
         grid-template-areas:
