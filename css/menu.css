@@ -260,6 +260,10 @@
         letter-spacing: normal;
     }
 
+    #navbar{
+        position: static;
+    }
+
     #nav-list, #text-sec{
         display: block;
     }
