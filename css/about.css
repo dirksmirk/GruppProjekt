@@ -46,7 +46,7 @@
     background-color: var(--dark-beige);
     color: var(--white);
     border-radius: 15px;
-    box-shadow: 10px 5px 5px grey;
+    box-shadow: 5px 5px 5px grey;
     ;
 
 }
@@ -71,7 +71,7 @@ img {
     background-color: var(--green);
     color: var(--dark-text);
     border-radius: 15px;
-    box-shadow: 10px 5px 5px grey;
+    box-shadow: 5px 5px 5px grey;
      grid-template-areas:
     "pics about faq"
     "pics about faq"
@@ -107,7 +107,7 @@ img {
     color: var(--white);
     border-radius: 15px;
     grid-template-columns: 1fr 1fr 1fr;
-    box-shadow: 10px 5px 5px grey;
+    box-shadow: 5px 5px 5px grey;
     grid-template-areas:
     "pics about faq"
     "pics about faq"
