@@ -66,6 +66,9 @@
 
 /* menu grid */
 
+/* använder fler rader för att få 
+spaceingen som jag ville */
+
 #menu-container{
     display: grid;
     color: var(--beige);
@@ -146,6 +149,9 @@
 }
 
 /* dog menu grid */
+
+/* använder fler kolumner för att få 
+spaceingen som jag ville */
 
 #dog-menu-container{
     display: grid;
