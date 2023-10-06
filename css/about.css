@@ -7,11 +7,24 @@
 
 
 /* Container for sides of web page */
-.container{
-    font-size: 25px;
+.container {
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+
+
+    grid-template-columns: (1fr 1fr, 1fr);
+    display: grid;
+    grid-template-areas:
+        "pics about faq"
+        "pics about faq"
+        "pics about faq"
+        "pics about .";
 }
 
 
+/* Photos for website styling */
 #photos {
     column-gap: 2%;
     row-gap: 10px;
@@ -22,11 +35,10 @@
     grid-template-columns: 1fr 1fr 1fr;
 
     grid-template-areas:
-    "pics about faq"
-    "pics about faq"
-    "pics about faq"
-    "pics about ."
-    ;
+        "pics about faq"
+        "pics about faq"
+        "pics about faq"
+        "pics about .";
 }
 
 
@@ -37,7 +49,7 @@
     background-color: var(--dark-beige);
     color: var(--white);
     border-radius: 15px;
-
+    box-shadow: 5px 5px 5px grey;
 }
 
 /* Image styling */
@@ -51,7 +63,7 @@ img {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-  }
+}
 
 /* About section of web-page */
 #about {
@@ -60,6 +72,12 @@ img {
     background-color: var(--green);
     color: var(--dark-text);
     border-radius: 15px;
+    box-shadow: 5px 5px 5px grey;
+    grid-template-areas:
+        "pics about faq"
+        "pics about faq"
+        "pics about faq"
+        "pics about .";
 }
 
 /* Social-media about box */
@@ -71,7 +89,13 @@ img {
     color: var(--brown);
     border-radius: 15px;
     padding: 0 20px;
+
     text-align: center;
+    grid-template-areas:
+        "pics about faq"
+        "pics about faq"
+        "pics about faq"
+        "pics about .";
 }
 
 /* FAQ box */
@@ -81,4 +105,112 @@ img {
     background-color: var(--brown);
     color: var(--white);
     border-radius: 15px;
+    grid-template-columns: 1fr 1fr 1fr;
+    box-shadow: 5px 5px 5px grey;
+    grid-template-areas:
+        "pics about faq"
+        "pics about faq"
+        "pics about faq"
+        "pics about ."
+    ;
+}
+
+/* Smaller screens */
+@media (max-width:1200px) {
+
+    #dog-icon,
+    #coffee-icon {
+        display: none;
+    }
+
+    #about {
+        font-size: 15px;
+    }
+
+    #faq {
+        font-size: 15px;
+    }
+}
+
+/* Tablet  */
+
+@media (max-width:960px) {
+
+    .container {
+        grid-template-columns: 3fr;
+        grid-template-areas:
+            "about about about"
+            "faq faq faq"
+    }
+    
+    #pics {
+        display: none;
+        
+    }
+
+    #site-name {
+        font-size: 40px;
+    }
+
+    #about{
+        width: 320px;
+    }
+
+    #faq{
+        width:320px;
+    }
+
+    #footer-wrapper {
+        flex-wrap: wrap;
+    }
+
+    footer>section {
+        min-width: 45%;
+    }
+
+}
+
+/* Mobile phones */
+
+@media (max-width: 768px) {
+    #site-name {
+        font-size: 30px;
+        letter-spacing: normal;
+    }
+
+    .container {
+        grid-template-columns: 2fr;
+        grid-template-areas:
+            "about about"
+            "faq faq";
+    }
+
+    #about {
+        width: 250px;
+    }
+
+    #faq {
+        width: 250px;
+    }
+
+    #navbar {
+        position: static;
+    }
+
+    #nav-list,
+    #text-sec {
+        display: block;
+    }
+
+    #text-sec p {
+        padding: 10px 5px;
+    }
+
+    #footer-section {
+        flex-direction: column;
+    }
+
+    footer>section {
+        min-width: 90%
+    }
 }

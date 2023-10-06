@@ -1,8 +1,7 @@
 @import url(variables.css);
 
-#info-container {
+#info {
         column-gap: 2%;
-        row-gap: 10px;
         margin: 20px auto;
         min-height: 300px;
         width: 90%;
@@ -13,21 +12,44 @@
     }
 
     #form {
-        column-gap: 2%;
-        row-gap: 10px;
         margin: 20px auto;
         min-height: 300px;
-        width: 75%;
+        width: 80%;
         display: flex;
+        flex-direction: column;
         align-content: center;
         background-color: var(--white);
         color: var(--dark-text);
         border-radius: 15px;
-        padding: 10px;
+        padding: 5px;
+    }
+
+    #form-text {
+        text-align: center;
+        font-size: 15px;
+        margin: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #warning {
+        text-align: center;
+        font-size: 20px;
+        color: red;
+        margin: 10px;
+    }
+
+    #info-head,
+    #form-head {
+        font-weight: bolder;
+        font-size: 30px;
+        background-image: none;
+        color: var(--brown);
     }
 
     form {
-        margin-left: 5%;
+        margin-left: 3%;
+        margin-right: 3%;
         gap: 10px;
         width: 100%;
         display: flex;
@@ -41,23 +63,30 @@
     }
 
     label {
-
+        width: 30%;
+        float: left;
     }
 
     input[type=text] {
         border-radius: 5px;
-        width: 95%;
+        width: 65%;
+        float: left;
     }
 
-    input[type=tel] {
+    input[type=radio] {
+        float: left
+    }
+    
+    textarea {
         border-radius: 5px;
-        width: 95%;
+        width: 65%;
     }
 
     input[type=button] {
         margin: 7px;
         border-radius: 5px;
         width: 50px;
+        align-self: center;
     }
     
     #adopt-info {
@@ -65,17 +94,15 @@
         width: 85%;
         background-color: var(--white);
         color: var(--dark-text);
-        border-radius: 15px;
-        padding: 10px;
+        border-radius: var(--bord-rad);
+        box-shadow: 3px 3px 3px var(--dark-text);
+        padding: 20px;
         display: flex;
         flex-direction: column;
     }
 
-
-
     img {
         grid-area: image;
-        height: 60%;
         width: 80%;
         border-radius: 50%;
         align-self: center;
@@ -83,15 +110,15 @@
     }
 
     p {
-
+        font-size: large;
     }
 
     #formlink {
         font-weight: bold;
         text-decoration: none;
-        color: var(--brown);
-        background-color: var(--green);
-        border: 2px solid var(--brown);
+        color: var(--dark-beige);
+        background-color: var(--brown);
+        border: 2px solid var(--dark-text);
         border-radius: 5px;
         width: 200px;
         height: 28px;
@@ -100,23 +127,40 @@
     }
 
     #formlink:hover {
-        color: var(--dark-text);
+        color: var(--white);
         text-shadow: none;
     }
 
     #formlink::after {
-        color: var(--brown);
+        color: var(--dark-beige);
     }
 
     /* Tablet display */
-    /* Removes the image from the information sections and compresses the footer so it doesnt need to wrap */
+    /* Removes a lot of extra elements like the dog picture, icons in the top and adjusts width of som other aspects to fit better in a smaller screen */
     @media (max-width:960px)
     {
+        #dog-icon,
+        #coffee-icon {
+            display: none;
+        }
+        #site-name {
+            font-size: 40px;
+            letter-spacing: 10px;
+            text-shadow: 1px 1px 2px #000;
+        }
         #adopt-info {
-            width: 75%;
+            width: 80%;
+            justify-self: center;
         }
         #formlink {
-            
+            width: 45%;
+            text-align: center;
+            font-size: large;
+        }
+        #form-text {
+            margin: 15px;
+            padding-left: 10px;
+            padding-right: 10px;
         }
         #footer-wrapper {
             flex-wrap: wrap;
@@ -127,6 +171,10 @@
         footer > section {
             min-width: 45%;
         }
+        label, input[type=text], textarea {
+            width: 94%;
+            margin: 0;
+        }
     }
 
     /* Phone display */
@@ -134,12 +182,24 @@
         resizes the form and info sections too */
     @media (max-width:768px)
     {
+        #site-name {
+            font-size: 30px;
+        }
+        #adopt-info {
+            width: 90%;
+        }
         #footer-wrapper {
             flex-direction: column;
             align-items: center;
         }
-
+        #formlink {
+            width: 55%;
+        }
         footer > section {
-            min-width: 75%;
+            min-width: 85%;
+        }
+        label, input[type=text], textarea {
+            width: 84%;
+            margin: 0;
         }
     }
