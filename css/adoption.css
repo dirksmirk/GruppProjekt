@@ -1,16 +1,18 @@
 @import url(variables.css);
+/* The form is a little bit messy because i'm using it for two separate html files, but first comes the two containers, then I get to the stuff related to the adoption form and then adoption info css */
 
+/* Adoptions info container */
 #info {
         column-gap: 2%;
         margin: 20px auto;
         min-height: 300px;
         width: 90%;
         display: grid;
-        grid-template-areas: 
+        grid-template-areas:
         "image info";
         align-content: center;
     }
-
+/* Adoption form container */
     #form {
         margin: 20px auto;
         min-height: 300px;
@@ -20,10 +22,22 @@
         align-content: center;
         background-color: var(--white);
         color: var(--dark-text);
-        border-radius: 15px;
+        border-radius: var(--bord-rad);
         padding: 5px;
+        outline: 5px solid var(--brown);
+    }
+    /* Adjustments to the header for the adoption info page and adoption form page */
+    #info-head,
+    #form-head {
+        font-weight: bolder;
+        font-size: 30px;
+        background-image: none;
+        color: var(--brown);
+        letter-spacing: 2px;
+        text-shadow: 1px 1px 2px #000;
     }
 
+    /* Adoption form paragrah text adjustments */
     #form-text {
         text-align: center;
         font-size: 15px;
@@ -31,64 +45,60 @@
         padding-left: 20px;
         padding-right: 20px;
     }
-
+    /* Similar to the above, but adjusts the warning text before the form so it's slightly bigger and red. An obvious warning to read the info */
     #warning {
         text-align: center;
         font-size: 20px;
         color: red;
         margin: 10px;
     }
-
-    #info-head,
-    #form-head {
-        font-weight: bolder;
-        font-size: 30px;
-        background-image: none;
-        color: var(--brown);
-    }
-
+    /* some adjustments to the layout of the form and making sure it's a flex display in a column direction so the forms go downward */
     form {
-        margin-left: 3%;
-        margin-right: 3%;
+        align-self: center;
+        padding-left: 3%;
+        padding-right: 3%;
         gap: 10px;
         width: 100%;
         display: flex;
         flex-direction: column;
-
     }
-
+    /* Field container, contains the label and input for the form. just spacing between */
     .field {
         margin-top: 5px;
         padding: 3px 0;
     }
-
+    /* Give the label a width and make it float to the left */
     label {
         width: 30%;
         float: left;
     }
-
+    /* Then we make the inputs for text float to the right, so labels and inputs are on the same row.  */
     input[type=text] {
         border-radius: 5px;
         width: 65%;
-        float: left;
+        float: right;
     }
-
+    /* Radio buttons are supposed to be to the left of the text so we float them further to the left */
     input[type=radio] {
         float: left
     }
-    
+
     textarea {
+        float: right;
         border-radius: 5px;
         width: 65%;
     }
-
+    /* Button is just there to look pretty for this form, serves no actual purpose. In the center at the bottom */
     input[type=button] {
         margin: 7px;
         border-radius: 5px;
-        width: 50px;
+        width: 15%;
+        height: 30px;
         align-self: center;
+        border: 1px solid var(--dark-text);
     }
-    
+
+    /* Styling of the adoption info box */
     #adopt-info {
         grid-area: info;
         width: 85%;
@@ -100,7 +110,7 @@
         display: flex;
         flex-direction: column;
     }
-
+    /* Styling of the adoption info image */
     img {
         grid-area: image;
         width: 80%;
@@ -108,11 +118,7 @@
         align-self: center;
         justify-self: center;
     }
-
-    p {
-        font-size: large;
-    }
-
+    /* Styling for the link from the adoption info to the adoption form */
     #formlink {
         font-weight: bold;
         text-decoration: none;
@@ -125,12 +131,12 @@
         text-align: center;
         align-self: center;
     }
-
+    /* Make the link white when hovering over it */
     #formlink:hover {
         color: var(--white);
         text-shadow: none;
     }
-
+    /* Make it keep the same colout even when having pressed the form link */
     #formlink::after {
         color: var(--dark-beige);
     }
@@ -139,18 +145,29 @@
     /* Removes a lot of extra elements like the dog picture, icons in the top and adjusts width of som other aspects to fit better in a smaller screen */
     @media (max-width:960px)
     {
+        /* Remove the picture from the grid area */
+        #info {
+            grid-template-areas: "info";
+        }
+        /* Remove the icons from the website name as they take up too much space on a smaller display */
         #dog-icon,
         #coffee-icon {
             display: none;
         }
+        /* Make the site name smaller too */
         #site-name {
-            font-size: 40px;
-            letter-spacing: 10px;
-            text-shadow: 1px 1px 2px #000;
+            font-size: 3.2em;
+            letter-spacing: 8px;
         }
-        #adopt-info {
-            width: 80%;
+        /* Make the boxes bigger and make sure they're centered */
+        #adopt-info,
+        #form {
+            width: 90%;
             justify-self: center;
+        }
+        /* Remove our dog picture as we want the focus to be the info */
+        img {
+            display: none;
         }
         #formlink {
             width: 45%;
@@ -162,44 +179,62 @@
             padding-left: 10px;
             padding-right: 10px;
         }
+        /* Make the footer wrap around and make them bigger so it becomes two rows of footers, looks better on tablet display */
         #footer-wrapper {
             flex-wrap: wrap;
-        }
-        img {
-            display: none;
         }
         footer > section {
             min-width: 45%;
         }
+        /* We remove our earlier float and set a number of areas to 100% width so that the text areas move to the row below the label, radio buttons stay as they are */
         label, input[type=text], textarea {
-            width: 94%;
-            margin: 0;
+            float: none;
+            width: 100%;
         }
+        /* A slightly bigger button so it's easier to see and hit */
+        input[type=button] {
+            width: 20%;
+            height: 40px;
+        }
+
     }
 
     /* Phone display */
     /* Turns the footer into a column and and rezises them to fit better for a mobile display
-        resizes the form and info sections too */
+        resizes the form and info sections too take up more of the screen and maybe make the text a little bigger */
     @media (max-width:768px)
     {
+        /* Slight readjustment of the font size and no letter spacing so it looks better on a phone */
         #site-name {
-            font-size: 30px;
+            font-size: 2.9em;
+            letter-spacing: normal;
         }
-        #adopt-info {
-            width: 90%;
+        /* We remove the sticky from the navbar so it doesnt follow and take up precious screen space. We also adjust the navigation list so it goes into a column list, instead of the text becoming too small to use */
+        #navbar{
+            position: static;
         }
-        #footer-wrapper {
+        #nav-list {
+            display: flex;
             flex-direction: column;
             align-items: center;
+        }
+        #nav-list > li {
+            padding: 3px;
+        }
+        /* Expand the info and form boxes too be more readable on a smaller screen */
+        #adopt-info,
+        #form {
+            width: 100%;
         }
         #formlink {
             width: 55%;
         }
+        /* We change the footer into a column, aligned in the center, so the text remains readable instead of keeping 4 mushed together boxes  */
+        #footer-wrapper {
+            flex-direction: column;
+            align-items: center;
+        }
         footer > section {
             min-width: 85%;
-        }
-        label, input[type=text], textarea {
-            width: 84%;
-            margin: 0;
         }
     }
