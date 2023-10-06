@@ -1,4 +1,5 @@
 @import url(variables.css);
+/* The form is a little bit messy because i'm using it for two separate html files, but first comes the two containers, then I get to the stuff related to the adoption form and then adoption info css */
 
 /* Adoptions info container */
 #info {
@@ -139,17 +140,20 @@
     /* Removes a lot of extra elements like the dog picture, icons in the top and adjusts width of som other aspects to fit better in a smaller screen */
     @media (max-width:960px)
     {
+        #info {
+            grid-template-areas: "info";
+        }
         #dog-icon,
         #coffee-icon {
             display: none;
         }
         #site-name {
-            font-size: 40px;
+            font-size: 3.2em;
             letter-spacing: 10px;
-            text-shadow: 1px 1px 2px #000;
         }
-        #adopt-info {
-            width: 80%;
+        #adopt-info,
+        #form {
+            width: 90%;
             justify-self: center;
         }
         #formlink {
@@ -185,22 +189,27 @@
     @media (max-width:768px)
     {
         #site-name {
-            font-size: 30px;
+            font-size: 2.9em;
+            letter-spacing: normal;
         }
-        #adopt-info {
-            width: 90%;
+        #navbar li {
+            font-size: 10px;
+        }
+        #adopt-info,
+        #form {
+            width: 100%;
+        }
+        #formlink {
+            width: 55%;
+        }
+        label, input[type=text], textarea {
+            margin: 0;
         }
         #footer-wrapper {
             flex-direction: column;
             align-items: center;
         }
-        #formlink {
-            width: 55%;
-        }
         footer > section {
             min-width: 85%;
-        }
-        label, input[type=text], textarea {
-            margin: 0;
         }
     }
