@@ -59,12 +59,15 @@ h2 {
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: auto;
       column-gap: 6%;
+      align-content: space-evenly;
+      justify-content: center;
+      justify-items: stretch;
     }
 
     .box {
       margin: 40px auto;
       width: 100%;
-      height: 580px;
+      height: 580px auto;
       border-radius: var(--bord-rad);
       padding: 20px;
       box-shadow: -2px 0 10px var(--brown);
@@ -83,4 +86,419 @@ h2 {
     h3 {
       margin: auto;
       padding: 5px;
+    }
+
+/* Mindre desktopskärmar: mellan 1200px och 960px */
+@media (min-width: 960px) and (max-width: 1200px) {
+
+  body{
+    background-color: var(--beige);
+    width: 80%;
+    margin: 20px auto;
+    color: var(--brown);
+    height: 1000px;
+}
+
+i{
+    position: absolute;
+}
+
+#dog-icon{
+    top: 77px;
+    left: 200px;
+    color: var(--dark-text);
+}
+
+#coffee-icon{
+    top: 77px;
+    right: 200px;
+    color: var(--dark-text);
+}
+
+header{
+    text-align: center;
+    padding: 20px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    background-image: linear-gradient(var(--white), var(--white), var(--beige));
+}
+
+#site-name{
+    font-size: 3.5em;
+    margin-bottom: 0;
+    letter-spacing: 17px;
+    text-shadow: 2px 2px 3px #000;
+}
+
+#navbar{
+    background-color: var(--green);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    position: sticky;
+    top: 0px;
+    box-shadow: 0px 8px 10px 0px rgba(0,0,0,0.2);
+    margin-bottom: 35px;
+}
+
+
+#nav-list{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+#navbar li{
+    text-align: center;
+    width: 20%;
+    display: inline;
+}
+
+#navbar a{
+    display: block;
+    text-decoration: none;
+    color: var(--brown);
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+#nav-list a.active{
+    color: var(--white);
+    text-shadow: 1px 1px 2px var(--brown);
+}
+
+#nav-list a:hover{
+    color: var(--dark-text);
+    text-shadow: none;
+}
+
+  article {
+    text-align: center;
+}
+
+h2 {
+  font-weight: bold;
+  padding: 20px;
+  display: flex;
+  width: 25%;
+  margin: 50px auto;
+}
+
+.hundar {
+  width: 100%;
+  text-align: center;
+  margin: 10px auto;
+  grid-template-columns: repeat(12, 1fr); 
+  display: grid;
+  column-gap: 4%; }
+
+    #hundar1
+    { grid-column: 1/7;
+      font-size: 25px;
+      padding-top: 20px;
+      padding-right: 10px;
+      padding-bottom: 20px;
+      padding-left: 10px;
+    }
+
+    #hundar2
+    { grid-column: 7/13;
+      font-size: 25px;
+      border-radius: 6px;
+      padding-top: 20px;
+      padding-right: 10px;
+      padding-bottom: 20px;
+      padding-left: 10px;
+    }
+
+    .doges {
+      width: 100%;
+      margin: 50px auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto;
+      column-gap: 6%;
+    }
+
+    .box {
+      margin: 40px auto;
+      width: 100%;
+      height: 640px;
+      padding: 20px;
+      align-items: center;
+      text-align: center;
+    }
+
+    img {
+      width: 100%;
+      height: 300px;
+      border-radius: 50%;
+      border: 6px solid var(--green);
+    }
+
+    h3 {
+      margin: auto;
+      padding: 5px;
+    } }
+
+  /*Tablets såsom Ipad: mellan 960px och 768px */
+  @media (min-width: 768px) and (max-width: 960px) {
+
+    body{
+      background-color: var(--beige);
+      width: 80%;
+      margin: 20px auto;
+      color: var(--brown);
+      height: 1000px;
+  }
+  
+  i{
+      position: absolute;
+  }
+  
+  #dog-icon{
+    margin-left: auto;
+      top: 77px;
+      left: 200px;
+      color: var(--dark-text);
+  }
+  
+  #coffee-icon{
+      top: 77px;
+      right: 200px;
+      margin-right: auto;
+      color: var(--dark-text);
+  }
+  
+  header{
+      text-align: center;
+      padding: 20px;
+      border-top-right-radius: 15px;
+      border-top-left-radius: 15px;
+      background-image: linear-gradient(var(--white), var(--white), var(--beige));
+  }
+  
+  #site-name{
+      font-size: 3.5em;
+      margin-bottom: 0;
+      letter-spacing: 17px;
+      text-shadow: 2px 2px 3px #000;
+  }
+  
+  #navbar{
+      background-color: var(--green);
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      position: sticky;
+      top: 0px;
+      box-shadow: 0px 8px 10px 0px rgba(0,0,0,0.2);
+      margin-bottom: 35px;
+  }
+  
+  
+  #nav-list{
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+  }
+  #navbar li{
+      text-align: center;
+      width: 20%;
+      display: inline;
+  }
+  
+  #navbar a{
+      display: block;
+      text-decoration: none;
+      color: var(--brown);
+      font-weight: bold;
+      font-size: 1.2em;
+  }
+  
+  #nav-list a.active{
+      color: var(--white);
+      text-shadow: 1px 1px 2px var(--brown);
+  }
+  
+  #nav-list a:hover{
+      color: var(--dark-text);
+      text-shadow: none;
+  }
+  
+  article {
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 36px;
+    font-weight: bold;
+    padding: 20px;
+    display: flex;
+    width: 40%;
+    margin: 50px auto;
+  }
+  
+  .hundar {
+    width: 100%;
+    text-align: center;
+    margin: 20px auto;
+    display: block;
+    column-gap: 4%; }
+  
+      #hundar1
+      { grid-column: block;
+        font-size: 20px;
+        margin: 20px auto;
+      }
+  
+      #hundar2
+      { grid-column: block;
+        font-size: 20px;
+        margin: 20px auto;
+      }
+  
+      .doges {
+        width: 100%;
+        margin: 50px auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 6%;
+        align-content: space-evenly;
+        justify-content: center;
+        justify-items: stretch;
+      }
+  
+      .box {
+        margin: 40px auto;
+        grid-row: auto;
+        width: 100%;
+        height: 600px;
+        border-radius: var(--bord-rad);
+        padding: 20px;
+        box-shadow: -2px 0 10px var(--brown);
+        align-items: center;
+        text-align: center;
+        background-color: var(--white);
+      }
+  
+      img {
+        width: 100%;
+        height: 300px;
+        border-radius: 50%;
+        border: 6px solid var(--green);
+      }
+  
+      h3 {
+        margin: auto;
+        padding: 5px;
+      }
+    
+      #footer-wrapper{
+        display: block;
+        flex-direction: row;
+        justify-content: center;  
+        margin-top: 20px;  
+      }
+      
+      footer > section{
+          background-color: var(--green);
+          min-width: 20%;
+          text-align: center;
+          border-radius: 10px;
+          margin: 10px;
+          border: 2px solid var(--brown);
+          box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2);
+          flex-wrap: wrap;
+      }
+      
+      footer p{
+          margin: 5px;
+      }
+      
+      footer a{
+          color: var(--brown);
+      }
+      
+      .foot-title{
+          font-weight: bold; }
+
+    }
+
+      /*Mobiltelefoner: mindre än 768px */
+@media (max-width: 768px) {
+
+  article
+  { width: 90%; 
+    display: block;
+    margin: 20px auto; }
+  
+    .hundar {
+      width: 100%;
+      text-align: center;
+      margin: 20px auto;
+      display: block;
+      column-gap: 4%; }
+    
+        #hundar1
+        { grid-column: block;
+          font-size: 20px;
+          margin: 20px auto;
+        }
+    
+        #hundar2
+        { grid-column: block;
+          font-size: 20px;
+          margin: 20px auto;
+        }
+  
+  .doges
+  { width: 90%; 
+    display: block; 
+    margin: 20px auto; }
+
+    .box {
+      margin: 40px auto;
+      grid-row: auto;
+      width: 90%;
+      height: 550px;
+      border-radius: var(--bord-rad);
+      padding: 20px;
+      box-shadow: -2px 0 10px var(--brown);
+      align-items: center;
+      text-align: center;
+      background-color: var(--white);
+    }
+  
+  #footer-wrapper{
+    display: block;
+    flex-direction: row;
+    justify-content: center;  
+    margin-top: 20px;  
+  }
+  
+  footer > section{
+      background-color: var(--green);
+      min-width: 20%;
+      text-align: center;
+      border-radius: 10px;
+      margin: 10px;
+      border: 2px solid var(--brown);
+      box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2);
+      flex-wrap: wrap;
+  }
+  
+  footer p{
+      margin: 5px;
+  }
+  
+  footer a{
+      color: var(--brown);
+  }
+  
+  .foot-title{
+      font-weight: bold; }
     }
