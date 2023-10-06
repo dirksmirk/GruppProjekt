@@ -22,8 +22,9 @@
         align-content: center;
         background-color: var(--white);
         color: var(--dark-text);
-        border-radius: 15px;
+        border-radius: var(--bord-rad);
         padding: 5px;
+        outline: 5px solid var(--brown);
     }
     /* Adjustments to the header for the adoption info page and adoption form page */
     #info-head,
@@ -32,6 +33,8 @@
         font-size: 30px;
         background-image: none;
         color: var(--brown);
+        letter-spacing: 2px;
+        text-shadow: 1px 1px 2px #000;
     }
 
     /* Adoption form paragrah text adjustments */
@@ -89,8 +92,10 @@
     input[type=button] {
         margin: 7px;
         border-radius: 5px;
-        width: 50px;
+        width: 15%;
+        height: 30px;
         align-self: center;
+        border: 1px solid var(--dark-text);
     }
 
     /* Styling of the adoption info box */
@@ -140,21 +145,29 @@
     /* Removes a lot of extra elements like the dog picture, icons in the top and adjusts width of som other aspects to fit better in a smaller screen */
     @media (max-width:960px)
     {
+        /* Remove the picture from the grid area */
         #info {
             grid-template-areas: "info";
         }
+        /* Remove the icons from the website name as they take up too much space on a smaller display */
         #dog-icon,
         #coffee-icon {
             display: none;
         }
+        /* Make the site name smaller too */
         #site-name {
             font-size: 3.2em;
-            letter-spacing: 10px;
+            letter-spacing: 8px;
         }
+        /* Make the boxes bigger and make sure they're centered */
         #adopt-info,
         #form {
             width: 90%;
             justify-self: center;
+        }
+        /* Remove our dog picture as we want the focus to be the info */
+        img {
+            display: none;
         }
         #formlink {
             width: 45%;
@@ -166,11 +179,9 @@
             padding-left: 10px;
             padding-right: 10px;
         }
+        /* Make the footer wrap around and make them bigger so it becomes two rows of footers, looks better on tablet display */
         #footer-wrapper {
             flex-wrap: wrap;
-        }
-        img {
-            display: none;
         }
         footer > section {
             min-width: 45%;
@@ -180,6 +191,11 @@
             float: none;
             width: 100%;
         }
+        /* A slightly bigger button so it's easier to see and hit */
+        input[type=button] {
+            width: 20%;
+            height: 40px;
+        }
 
     }
 
@@ -188,13 +204,24 @@
         resizes the form and info sections too take up more of the screen and maybe make the text a little bigger */
     @media (max-width:768px)
     {
+        /* Slight readjustment of the font size and no letter spacing so it looks better on a phone */
         #site-name {
             font-size: 2.9em;
             letter-spacing: normal;
         }
-        #navbar li {
-            font-size: 10px;
+        /* We remove the sticky from the navbar so it doesnt follow and take up precious screen space. We also adjust the navigation list so it goes into a column list, instead of the text becoming too small to use */
+        #navbar{
+            position: static;
         }
+        #nav-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #nav-list > li {
+            padding: 3px;
+        }
+        /* Expand the info and form boxes too be more readable on a smaller screen */
         #adopt-info,
         #form {
             width: 100%;
@@ -202,9 +229,7 @@
         #formlink {
             width: 55%;
         }
-        label, input[type=text], textarea {
-            margin: 0;
-        }
+        /* We change the footer into a column, aligned in the center, so the text remains readable instead of keeping 4 mushed together boxes  */
         #footer-wrapper {
             flex-direction: column;
             align-items: center;
